@@ -1,0 +1,93 @@
+.home{
+    margin-top: 8vw;
+}
+
+.banner_image{
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_image img{
+    width: 100vw;
+    height: 30vw;
+}
+
+.banner_image h1{
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    font-size: 4em;
+    color: rgb(23, 85, 23);
+}
+
+.banner_image p{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 1.5em;
+    color: rgb(80, 69, 69);
+}
+
+.banner_image button{
+    background-color: rgb(23, 85, 23);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1em;
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.homepage{
+    margin: 0 4vw 0 4vw;
+}
+
+.top_categories{
+    margin-top: 3vw;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.top_categories::-webkit-scrollbar{
+    display: none; /* for chrome, safari and Opera*/
+}
+
+.top_categories{
+    scrollbar-width: none; /* for firefox and Edge */
+}
+
+.categories_list{
+    margin-top: 2vw;
+    display: flex;
+}
+
+.category{
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.category img{
+    height: 18vw;
+    width: 13.5vw;
+    border-radius: 1rem;
+}
+
+.category h4{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#individual_category{
+    margin-left: 2vw;
+}
+
+.deals{
+    margin-top: 3vw;
+}
