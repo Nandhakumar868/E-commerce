@@ -3,12 +3,12 @@
     margin: 0;
 }
 
-header{
+/* header{
     position: fixed;
     top: 0;
     z-index: 10;
     background-color: white;
-}
+} */
 
 .header{
     background-color: green;
@@ -71,6 +71,10 @@ input{
 }
 
 #search_icon{
-    right: 5vw;
+    right: 18vw;
     padding: 0.2vw;
+}
+
+.search_bar{
+    margin-right: 3vw;
 }

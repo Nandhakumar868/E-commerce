@@ -1,4 +1,421 @@
 .home{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Homepage Banner */
+
+#banner_background{
+    background-image: linear-gradient(#a8d5e7,#c3b091);
+    width: 100vw;
+    height: 100%;
+    /* transform: translateX(100%);
+    animation: slide-side 1s ease-in forwards; */
+}
+
+@keyframes slide-side{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#banner_background img{
+    object-fit: fill;
+    width: 100vw;
+}
+
+.banner_area, .single_category{
+    position: relative;
+    overflow: hidden;
+}
+
+#banner_image_1{
+    position: absolute;
+    bottom: 19%;
+    right: 38%;
+}
+
+#banner_image_2{
+    position: absolute;
+    bottom: 22%;
+    right: 14%;
+}
+
+#banner_image_3{
+    position: absolute;
+    bottom: 32%;
+    right: 28%;
+}
+
+#banner_image_4{
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+}
+
+/* .banner_overlay_images{
+    transform: translateY(-100%);
+    animation: slide-down 1s ease-in forwards;
+}
+
+@keyframes slide-down{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+} */
+
+.banner_title_1, .banner_title_2{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: #003d29;
+    font-size: 4rem;
+}
+
+.banner_title_2{
+    top: 45%;
+}
+
+.banner_paragraph{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+.banner_button{
+    position: absolute;
+    bottom: 19%;
+    left: 5%;
+    background-color: #003d29;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: none;
+}
+
+/* Shop our categories */
+
+.homepage{
+    margin: 0 4vw;
+}
+
+.shop_category_area, .best_deal_for_you_area, .choose_brand_area{
+    margin-top: 2.5rem;
+}
+
+.section_title_wrap{
+    margin-bottom: 2rem;
+}
+
+.category_list{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.category_list::-webkit-scrollbar, .today_deals_list::-webkit-scrollbar{
+    display: none;
+}
+
+.single_category{
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+}
+
+.category_image{
+    object-fit: cover;
+    width: 13.1vw;
+    height: 17vw;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category_title{
+    position: absolute;
+    top: 8%;
+    color: white;
+}
+
+.category_image:hover{
+    transform: scale(1.15);
+    border-radius: 0.5rem;
+}
+
+/* Today deals for you */
+
+.today_deals_list{
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    overflow: auto;
+}
+
+.single_deal{
+    background-color: white;
+    border-radius: 1rem;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+.deal_thumbnail_wrap{
+    background-color: #f5f6f6;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.deal_thumbnail_wrap img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.deal_thumbnail_wrap img:hover{
+    transform: scale(1.2);
+}
+
+#product_wishlist{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    top: 4%;
+    right: 5%;
+}
+
+#product_wishlist:hover{
+    background-color: #eedde7;
+}
+
+.product_title_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.product_price{
+    font-weight: 600;
+}
+
+.product_detail{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.product_star_wrap{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.product_star_wrap span {
+    color: green;
+    font-variation-settings:
+    'FILL' 1,
+    'opsz' 48
+}
+
+.product_button{
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.product_button:hover{
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+/* Choose Brand */
+
+.brand_list{
+    display: flex;
+    flex-wrap: wrap;
+    white-space: wrap;
+}
+
+.single_brand{
+    background-color: #f5f6f6;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 19vw;
+    padding: 0.5rem;
+    margin-right: 2vw;
+    margin-top: 2rem;
+}
+
+.single_brand:hover{
+    border: 2px solid black;
+}
+
+.brand_image{
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand_image:hover{
+    transform: scale(1.2);
+}
+
+.brand_content{
+    margin: 0 0.3rem;
+}
+
+.delivery_time{
+    font-size: 0.9rem;
+}
+
+/* Get Discount */
+
+.get_discount_area{
+    margin-top: 2.5rem;
+}
+
+.discount_list{
+    display: flex;
+}
+
+.get_discount_single_item{
+    border-radius: 0.4rem;
+    width: 20.5vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+.get_discount_content{
+    padding: 1.5rem;
+}
+
+.discount_price{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.discount_description{
+    margin-bottom: 1rem;
+}
+
+.discount_image_container{
+    overflow: hidden;
+}
+
+.discount_image{
+    transition: transform 0.3s ease-in-out;
+}
+
+.get_discount_single_item:hover .discount_image{
+        transform: scale(1.2);
+}
+
+#get_discount_single_item_1{
+    background-color: #f9e2ab;
+    span{
+        color: #fbb105;
+    }
+}
+
+#get_discount_single_item_2{
+    background-color: #f9dcdc;
+    span{
+        color: #472705;
+    }
+}
+
+#get_discount_single_item_3{
+    background-color: #f2e4d9;
+    span{
+        color: #775e28;
+    }
+}
+
+#get_discount_single_item_4{
+    background-color: #d2f7ec;
+    span{
+        color: rgb(2, 38, 2);
+    }
+}
+
+/* Best Deals For You */
+
+.deals_for_you_list{
+    display: flex;
+}
+
+/* Discount Banner */
+
+.discount_banner{
+    margin-top: 3vw;
+}
+
+.discount_banner_container{
+    position: relative;
+}
+
+.discount_banner_image_container{
+    overflow: hidden;
+}
+
+.discount_banner_image{
+    width: 100vw;
+    height: 50vw;
+    transition: transform 0.3s ease-in-out
+}
+
+.discount_banner_image:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.discount_banner_content{
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    width: 25vw;
+    background-color: rgb(6, 59, 6);
+    padding: 5rem 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.discount_banner_title{
+    font-size: 3rem;
+}
+
+.discount_banner_button{
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 3rem;
+}
+
+.discount_banner_button:hover{
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* .home{
     margin-top: 8vw;
 }
 
@@ -51,12 +468,12 @@
     white-space: nowrap;
 }
 
-.top_categories::-webkit-scrollbar, .deals_for_you{
-    display: none; /* for chrome, safari and Opera*/
+.top_categories::-webkit-scrollbar{
+    display: none; /* for chrome, safari and Opera
 }
 
-.top_categories, .deals_for_you{
-    scrollbar-width: none; /* for firefox and Edge */
+.top_categories{
+    scrollbar-width: none; /* for firefox and Edge 
 }
 
 .categories_list{
@@ -92,7 +509,32 @@
 .deals_for_you{
     margin-top: 2vw;
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
+    padding-top: 10px;
+}
+
+.deals_for_you::-webkit-scrollbar{
+    width: 4px;
+    height: 2px;
+}
+
+.deals_for_you::-webkit-scrollbar:hover{
+    height: 4px;
+    width: 12px;
+    cursor: pointer;
+}
+
+.deals_for_you::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.deals_for_you::-webkit-scrollbar-track{
+    background-color: #f5f5f5;
+}
+
+.today_deals{
+    display: flex;
 }
 
 .deals{
@@ -110,7 +552,11 @@
     overflow: hidden;
 }
 
-.deals span{
+.deals_image img{
+    width: 100%;
+}
+
+#favorites{
     position: absolute;
     top: 5%;
     left: 87%;
@@ -159,4 +605,4 @@
 
 .brands{
     margin-top: 3vw;
-}
+} */
