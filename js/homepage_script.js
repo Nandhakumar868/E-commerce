@@ -92,6 +92,10 @@ const todayDealsElement = document.querySelector('.today_deals_list');
 
 const bestDealsElement = document.querySelector('.deals_for_you_list');
 
+const productTabList = document.querySelector('.product_tab_content');
+
+const mostSellingProductList = document.querySelector('.most_selling_product_list');
+
 function createDealElement(dealData){
 
     const dealsElement = document.createElement('div');
@@ -160,13 +164,29 @@ function createDealElement(dealData){
 
     return dealsElement;
 }
+
+// Deals for you
 const newDealsElement = dealsData.map(createDealElement);
 
 todayDealsElement.append(...newDealsElement);
 
+// Today best deals
+
 const newDealsForYouElement = bestDealsData.map(createDealElement);
 
 bestDealsElement.append(...newDealsForYouElement);
+
+// Product List
+
+const newProductContent = dealsData.map(createDealElement);
+
+productTabList.append(...newProductContent);
+
+// Most Selling Products
+
+const newMostSellingProductList = bestDealsData.map(createDealElement);
+
+mostSellingProductList.append(...newMostSellingProductList);
 
 
 

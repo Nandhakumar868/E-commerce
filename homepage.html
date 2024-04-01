@@ -6,6 +6,7 @@
     <link rel="icon" href="images/url_logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/footer_style.css">
     <link rel="stylesheet" href="css/homepage_style.css">
     <title>ShopCart</title>
 </head>
@@ -25,7 +26,7 @@
             <img src="images/logo.svg" alt="ShopCart Logo">
             
             <nav>
-                <button>Categories <span class="material-symbols-outlined">Keyboard_arrow_down</span></button>
+                <button class="category_button">Categories <span class="material-symbols-outlined">Keyboard_arrow_down</span></button>
                 <button>Deals</button>
                 <button>What's new</button>
                 <button>Delivery</button>
@@ -71,62 +72,62 @@
                 <div class="category_list">
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/furniture.png" alt="Furniture" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/furniture.png" alt="Furniture" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Furniture</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/Handbag.png" alt="hand bag" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/Handbag.png" alt="hand bag" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Hand Bag</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/books.png" alt="Books" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/books.png" alt="Books" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Books</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/tech.png" alt="Tech" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/tech.png" alt="Tech" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Tech</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/sneakers.png" alt="Sneakers" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/sneakers.png" alt="Sneakers" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Sneakers</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/travel.png" alt="Travel" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/travel.png" alt="Travel" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Travel</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/art.jpg" alt="Art" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/art.jpg" alt="Art" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Art</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/education.jpg" alt="Education" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/education.jpg" alt="Education" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Education</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/fashion.jpg" alt="Fashion" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/fashion.jpg" alt="Fashion" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Fashion</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/clothes.jpg" alt="Clothes" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/clothes.jpg" alt="Clothes" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Clothes</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/beauty.jpg" alt="Beauty" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/beauty.jpg" alt="Beauty" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Beauty</h1>
                     </div>
 
                     <div class="single_category">
-                        <img src="images/HomePage/Shop_category/hats.jpg" alt="Hats" loading="lazy" class="category_image">
+                        <div class="shop_category_image"><img src="images/HomePage/Shop_category/hats.jpg" alt="Hats" loading="lazy" class="category_image"></div>
                         <h1 class="category_title">Hats</h1>
                     </div>
 
@@ -295,102 +296,290 @@
                 </div>
             </div>
         </section>
+
+        <div class="homepage">
+
+            <section class="product_tab_area">
+                <h1 class="section_title_wrap">Today Best Deals for you!</h1>
+                <div class="product_tabs">
+                    <div class="product_tablist"></div>
+                    <div class="product_tab_content"></div>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="discount_banner_two_area">
+            <div class="discount_banner_two_content">
+                <div class="discount_banner_content_inner">
+                    <h1 class="discount_banner_two_title">Get 5% Cash Back</h1>
+                    <p class="discount_banner_two_detail">on Shopcart.com</p>
+                    <button class="discount_banner_two_button">Learn More</button>
+                </div>
+                <div class="dicount_card_thumbnail">
+                    <img src="images/HomePage/discount_banner_two/shopcart_card_1.svg" alt="Card One" class="shopcart_card_one">
+                    <img src="images/HomePage/discount_banner_two/shopcart_card_2.png" alt="Card Two" class="shopcart_card_two">
+                    <img src="images/HomePage/discount_banner_two/shopcart_card_3.png" alt="Card Three" class="shopcart_card_three">
+                </div>
+            </div>
+        </section>
+
+        <div class="homepage">
+
+            <section class="most_selling_product_area">
+                <h1 class="section_title_wrap">Most Selling Products</h1>
+                <div class="most_selling_product_list">
+                </div>
+            </section>
+
+            <section class="trending_product_area">
+                <h1 class="section_title_wrap">Trending Products For You!</h1>
+                    <div class="trending_product_item_wrap">
+                        <div class="trending_single_item">
+                            <div class="trending_product_image_container"><img src="images/discount_banner.jpg" alt="" class="trending_product_image"></div>
+                            <div class="trending_product_content">
+                                <h1 class="trending_product_title">Furniture Village</h1>
+                                <p class="delivery_time">Delivery with in 24 hours</p>
+                                <button class="trending_product_button">Shop Now</button>
+                            </div>
+                        </div>
+
+                        <div class="trending_single_item">
+                            <div class="trending_product_image_container"><img src="images/HomePage/Trending_products/fashion.png" alt="" class="trending_product_image"></div>
+                            <div class="trending_product_content">
+                                <h1 class="trending_product_title">Fashion World</h1>
+                                <p class="delivery_time">Delivery with in 24 hours</p>
+                                <button class="trending_product_button">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="best_selling_store_area">
+                <h1 class="section_title_wrap">Best Selling Store</h1>
+                <div class="best_selling_store_item_wrap">
+
+                    <div class="best_selling_single_item">
+                        <div class="store_images">
+                            <div class="best_selling_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/bag.png" alt="Bag" loading="lazy" class="best_selling_store_image"></div>
+                            <div class="store_thumbnail_wrap"><img src="images/HomePage/Choose_brand/staples.png" alt="Staples" class="store_logo"></div>
+                        </div>
+                        <div class="best_selling_store_content">
+                            <h3 class="store_title">Staples</h3>
+                            <div class="selling_category_wrap">
+                                <p>Bag</p>
+                                <span class="material-symbols-outlined">fiber_manual_record</span>
+                                <p>Perfume</p>
+                            </div>
+                            <div class="selling_paragraph_wrap">
+                                <span class="material-symbols-outlined">shoppingmode</span>
+                                <p>Delivery with in 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best_selling_single_item">
+                        <div class="store_images">
+                            <div class="best_selling_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/mobile.png" alt="Mobile" loading="lazy" class="best_selling_store_image"></div>
+                            <div class="store_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/now_delivery.png" alt="Now Delivery" class="store_logo"></div>
+                        </div>
+                        <div class="best_selling_store_content">
+                            <h3 class="store_title">Now Delivery</h3>
+                            <div class="selling_category_wrap">
+                                <p>Mobile</p>
+                                <span class="material-symbols-outlined">fiber_manual_record</span>
+                                <p>Gadgets</p>
+                            </div>
+                            <div class="selling_paragraph_wrap">
+                                <span class="material-symbols-outlined">shoppingmode</span>
+                                <p>Delivery with in 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best_selling_single_item">
+                        <div class="store_images">
+                            <div class="best_selling_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/cosmetics.png" alt="Cosmetics" loading="lazy" class="best_selling_store_image"></div>
+                            <div class="store_thumbnail_wrap"><img src="images/HomePage/Choose_brand/bevmo.png" alt="Bevmo" class="store_logo"></div>
+                        </div>
+                        <div class="best_selling_store_content">
+                            <h3 class="store_title">Bevmo</h3>
+                            <div class="selling_category_wrap">
+                                <p>Cosmetics</p>
+                                <span class="material-symbols-outlined">fiber_manual_record</span>
+                                <p>Makeup</p>
+                            </div>
+                            <div class="selling_paragraph_wrap">
+                                <span class="material-symbols-outlined">shoppingmode</span>
+                                <p>Delivery with in 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best_selling_single_item">
+                        <div class="store_images">
+                            <div class="best_selling_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/shoe.png" alt="Bag" loading="lazy" class="best_selling_store_image"></div>
+                            <div class="store_thumbnail_wrap"><img src="images/HomePage/Best_selling_store/quicklly.png" alt="Staples" class="store_logo"></div>
+                        </div>
+                        <div class="best_selling_store_content">
+                            <h3 class="store_title">Quicklly</h3>
+                            <div class="selling_category_wrap">
+                                <p>Shoe</p>
+                                <span class="material-symbols-outlined">fiber_manual_record</span>
+                                <p>Sneaker</p>
+                            </div>
+                            <div class="selling_paragraph_wrap">
+                                <span class="material-symbols-outlined">shoppingmode</span>
+                                <p>Delivery with in 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="services_help_area">
+                <h1 class="section_title_wrap">Services to help you shop</h1>
+                <div class="services_help_wrap">
+
+                    
+                    
+                    <div class="services_help_single_item">
+                        <div class="services_help_content">
+                            <h3>Frequently Asked Questions</h3>
+                            <p>Updates on safe shopping in out store</p>
+                        </div>
+                        <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_1.png" alt="Service Questions" loading="lazy" class="services_help_image"></div>
+                    </div>
+
+                    <div class="services_help_single_item">
+                        <div class="services_help_content">
+                            <h3>Online Payment Process</h3>
+                            <p>Updates on safe shopping in out store</p>
+                        </div>
+                        <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_2.png" alt="Payment Questions" loading="lazy" class="services_help_image"></div>
+                    </div>
+
+                    <div class="services_help_single_item">
+                        <div class="services_help_content">
+                            <h3>Home Delivery Options</h3>
+                            <p>Updates on safe shopping in out store</p>
+                        </div>
+                        <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_3.png" alt="Delivery Questions" loading="lazy" class="services_help_image"></div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
         
     </div>
 
-    <hr>
+    <div class="homepage">
 
-    <Footer>
-        <div>
-            <div>
-                <div>
-                    <img src="images/logo.svg" alt="ShopCart logo">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amer sint. Velit officia consequat duis enim velit mollit.</p>
-                    <h3>Accepted Payments</h3>
-                    <div></div>
+        <hr class="footer_divider">
+
+        <Footer>
+            <div class="footer_area">
+                <div class="footer_columns">
+                    <div class="footer_about_us">
+                        <img src="images/logo.svg" alt="ShopCart logo" class="footer_shopcart_logo">
+                        <p class="footer_shopcart_description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amer sint. Velit officia consequat duis enim velit mollit.</p>
+                        <h3 class="footer_payment_title">Accepted Payments</h3>
+                        <div class="footer_payment_wrap">
+                            <img src="images/footer/payments/stripe.png" alt="Stripe" class="footer_payment_image">
+                            <img src="images/footer/payments/visa.png" alt="Visa" class="footer_payment_image">
+                            <img src="images/footer/payments/mastercard.png" alt="Mastercard" class="footer_payment_image">
+                            <img src="images/footer/payments/amazon.png" alt="Amazon" class="footer_payment_image">
+                            <img src="images/footer/payments/klarna.png" alt="klarna" class="footer_payment_image">
+                            <img src="images/footer/payments/paypal.png" alt="Paypal" class="footer_payment_image">
+                            <img src="images/footer/payments/apple_pay.png" alt="Apple Pay" class="footer_payment_image">
+                            <img src="images/footer/payments/gpay.png" alt="Google Pay" class="footer_payment_image">
+                        </div>
+                    </div>
+                    <div class="footer_nav">
+                        <h1>Department</h1>
+                        <ul>
+                            <li>Fashion</li>
+                            <li>Education Product</li>
+                            <li>Frozen Food</li>
+                            <li>Beverages</li>
+                            <li>Organic Grocery</li>
+                            <li>Office Supplies</li>
+                            <li>Beauty Products</li>
+                            <li>Books</li>
+                            <li>Electronics & Gadget</li>
+                            <li>Travel Accessoried</li>
+                            <li>Fitness</li>
+                            <li>Sneakers</li>
+                            <li>Toys</li>
+                            <li>Furniture</li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav">
+                        <h1>About us</h1>
+                        <ul>
+                            <li>About Shopcart</li>
+                            <li>Careers</li>
+                            <li>News & Blog</li>
+                            <li>Help</li>
+                            <li>Press Center</li>
+                            <li>Shop By Location</li>
+                            <li>Shopcart Brands</li>
+                            <li>Affiliate & Partners</li>
+                            <li>Ideas & Guides</li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav">
+                        <h1>Services</h1>
+                        <ul>
+                            <li>Gift Card</li>
+                            <li>Mobile App</li>
+                            <li>Shipping & Delivery</li>
+                            <li>Order Pickup</li>
+                            <li>Account signup</li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav">
+                        <h1>Help</h1>
+                        <ul>
+                            <li>Shopcart Help</li>
+                            <li>Returns</li>
+                            <li>Track Orders</li>
+                            <li>Contact Us</li>
+                            <li>Feedback</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h1>Department</h1>
-                    <ul>
-                        <li>Fashion</li>
-                        <li>Education Product</li>
-                        <li>Frozen Food</li>
-                        <li>Beverages</li>
-                        <li>Organic Grocery</li>
-                        <li>Office Supplies</li>
-                        <li>Beauty Products</li>
-                        <li>Books</li>
-                        <li>Electronics & Gadget</li>
-                        <li>Travel Accessoried</li>
-                        <li>Fitness</li>
-                        <li>Sneakers</li>
-                        <li>Toys</li>
-                        <li>Furniture</li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>About us</h1>
-                    <ul>
-                        <li>About Shopcart</li>
-                        <li>Careers</li>
-                        <li>News & Blog</li>
-                        <li>Help</li>
-                        <li>Press Center</li>
-                        <li>Shop By Location</li>
-                        <li>Shopcart Brands</li>
-                        <li>Affiliate & Partners</li>
-                        <li>Ideas & Guides</li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>Services</h1>
-                    <ul>
-                        <li>Gift Card</li>
-                        <li>Mobile App</li>
-                        <li>Shipping & Delivery</li>
-                        <li>Order Pickup</li>
-                        <li>Account signup</li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>Help</h1>
-                    <ul>
-                        <li>Shopcart Help</li>
-                        <li>Returns</li>
-                        <li>Track Orders</li>
-                        <li>Contact Us</li>
-                        <li>Feedback</li>
-                    </ul>
+
+                <hr class="footer_divider" id="footer_copyright_divider">
+
+                <div class="copyright_content">
+                    <div class="copyright_left_menu">
+                        <div class="copyright_left_menu_single_category">
+                            <img src="images/footer/copyright/seller.svg" alt="Seller" class="copyright_left_menu_image">
+                            <p>Become Seller</p>
+                        </div>
+                        <div class="copyright_left_menu_single_category">
+                            <img src="images/footer/copyright/gifts.svg" alt="Gifts" class="copyright_left_menu_image">
+                            <p>Gift Cards</p>
+                        </div>
+                        <div class="copyright_left_menu_single_category">
+                            <img src="images/footer/copyright/help.svg" alt="Gifts" class="copyright_left_menu_image">
+                            <p>Help Center</p>
+                        </div>
+                    </div>
+                    <div class="copyright_menu">
+                        <p>Terms of Service</p>
+                        <p>Privacy & Policy</p>
+                    </div>
+                    <div class="copyright_text">
+                        <p>All Right reserved by Musemind ui/ux design agency | 2022</p>
+                    </div>
                 </div>
             </div>
-
-            <hr>
-
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="">
-                        <h4>Become Seller</h4>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <h4>Gift Cards</h4>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <h4>Help Center</h4>
-                    </div>
-                </div>
-                <div>
-                    <h4>Terms of Service</h4>
-                    <h4>Privacy & Policy</h4>
-                </div>
-                <div>
-                    <p>All Right reserved by Musemind ui/ux design agency | 2022</p>
-                </div>
-            </div>
-        </div>
-    </Footer>
+        </Footer>
+    </div>
 
     <script src="js/homepage_script.js"></script>
 
