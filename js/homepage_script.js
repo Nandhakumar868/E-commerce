@@ -88,6 +88,35 @@ const bestDealsData = [
     },
 ]
 
+const popularCategoryitems = document.querySelector('.popular_category_items');
+const popularCategory = document.querySelector('.popular_category');
+
+popularCategoryitems.addEventListener('click', () => {
+    popularCategory.style.display = 'block';
+});
+
+document.addEventListener('click', handleClickOutside);
+
+function handleClickOutside(event){
+    const clickedElement = event.target;
+
+    if(!popularCategoryitems.contains(clickedElement)){
+        popularCategory.style.display = 'none';
+    }
+}
+
+popularCategory.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
+// const categoryList = document.querySelector('.category_list');
+
+// categoryList.addEventListener('dragstart', () => {
+//     categoryList.style.overflow = 'auto';
+// });
+
+
+
 const todayDealsElement = document.querySelector('.today_deals_list');
 
 const bestDealsElement = document.querySelector('.deals_for_you_list');
@@ -122,7 +151,7 @@ function createDealElement(dealData){
     const productTitleWrap = document.createElement('div');
     productTitleWrap.classList.add('product_title_wrap');
 
-    const productTitle = document.createElement('h3');
+    const productTitle = document.createElement('h4');
     productTitle.classList.add('product_title');
     productTitle.textContent = dealData.title;
     productTitleWrap.appendChild(productTitle);

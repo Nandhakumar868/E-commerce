@@ -1,15 +1,17 @@
 .home{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1.5rem;
 }
 
 /* Homepage Banner */
 
-#banner_background{
+.banner_image{
     background-image: linear-gradient(#a8d5e7,#c3b091);
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     transform: translateX(100%);
     animation: slide-side 1s ease-in forwards;
+    position: relative;
 }
 
 @keyframes slide-side{
@@ -21,38 +23,68 @@
     }
 }
 
+#banner_background{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
 #banner_background img{
     object-fit: fill;
     width: 100vw;
 }
 
 .banner_area, .single_category{
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.single_category{
     position: relative;
+}
+
+.banner_overlay{
     overflow: hidden;
 }
 
 #banner_image_1{
     position: absolute;
-    bottom: 19%;
-    right: 38%;
+    bottom: 18vw;
+    right: 40vw;
+    top: auto;
+    left: auto;
+    overflow: hidden;
+}
+
+#banner_image_1 img, #banner_image_2 img, #banner_image_3 img, #banner_image_4 img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: fill;
+    object-fit: cover;
 }
 
 #banner_image_2{
     position: absolute;
-    bottom: 24%;
-    right: 16%;
+    bottom: 20vw;
+    right: 14vw;
+    top: auto;
+    left: auto;
+    overflow: hidden;
 }
 
 #banner_image_3{
     position: absolute;
-    bottom: 35%;
-    right: 29%;
+    bottom: 25vw;
+    right: 29vw;
+    top: auto;
+    overflow: hidden;
+    left: auto;
 }
 
 #banner_image_4{
     position: absolute;
-    bottom: 53%;
-    right: 10%;
+    bottom: 34vw;
+    right: 10vw;
 }
 
 .banner_overlay_images{
@@ -62,7 +94,7 @@
 
 @keyframes slide-down{
     from{
-        transform: translateY(-100%);
+        transform: translateY(-70%);
     }
     to{
         transform: translateY(0);
@@ -121,13 +153,23 @@
 }
 
 .category_list::-webkit-scrollbar, .today_deals_list::-webkit-scrollbar{
-    display: none;
+    width: 5px;
+    height: 0.35rem;
+    background-color: #aaa;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.category_list::-webkit-scrollbar-thumb, .today_deals_list::-webkit-scrollbar-thumb{
+    background-color: #7f7d7c;
+    border-radius: 3rem;
+    cursor: pointer;
 }
 
 .single_category{
     border-radius: 0.5rem;
     margin-right: 2rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
     overflow: visible;
     justify-content: center;
@@ -143,9 +185,18 @@
     border-radius: 0.5rem;
 }
 
+.swiper_pagination{
+    width: 100vw;
+    height: 4vw;
+    left: 0;
+    right: 0;
+    position: relative;
+    background-color: rgba(35,31,30,0.2);
+}
+
 .category_image{
     object-fit: cover;
-    width: 12vw;
+    width: 13vw;
     height: 17vw;
     border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
@@ -173,9 +224,9 @@
 .single_deal{
     background-color: white;
     border-radius: 1rem;
-    margin-right: 3vw;
+    margin-right: 4vw;
     cursor: pointer;
-    width: 15vw;
+    /* width: 15vw; */
 }
 
 .deal_thumbnail_wrap{
@@ -196,7 +247,7 @@
 
 #product_wishlist{
     position: absolute;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     padding: 0.5rem;
     border-radius: 2rem;
     top: 4%;
@@ -265,7 +316,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 15.75vw;
+    width: 15.2vw;
     padding: 0.5rem;
     margin-right: 2vw;
     margin-top: 2rem;
@@ -290,7 +341,7 @@
 }
 
 .delivery_time{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 /* Get Discount */
@@ -305,12 +356,10 @@
 
 .get_discount_single_item{
     border-radius: 0.4rem;
-    width: 20.5vw;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     margin-right: 2vw;
     cursor: pointer;
+    width: 22vw;
 }
 
 .get_discount_content{
@@ -323,7 +372,7 @@
 }
 
 .discount_description{
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
@@ -332,8 +381,6 @@
 }
 
 .discount_image{
-    height: 100%;
-    width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -373,6 +420,7 @@
 
 .deals_for_you_list{
     display: flex;
+    overflow: auto;
 }
 
 /* Discount Banner */
@@ -443,7 +491,7 @@
 .discount_banner_two_area{
     margin: 2rem 0;
     background-color: #ffe6cc;
-    height: 18vw;
+    height: 22vw;
 }
 
 .discount_banner_two_content{
@@ -477,21 +525,21 @@
 
 .shopcart_card_one{
     position: absolute;
-    right: 13%;
+    right: 0%;
     top: 17%;
     transform: rotate(-10deg);
 }
 
 .shopcart_card_two{
     position: absolute;
-    right: 13%;
+    right: 0%;
     top: 12%;
     transform: rotate(-19deg);
 }
 
 .shopcart_card_three{
     position: absolute;
-    right: 13.7%;
+    right: 0%;
     top: 1%;
     transform: rotate(-29deg);
 }
@@ -504,6 +552,7 @@
 
 .most_selling_product_list{
     display: flex;
+    overflow: auto;
 }
 
 /* Trending Products */
@@ -559,6 +608,7 @@
 
 .best_selling_store_item_wrap{
     display: flex;
+    overflow: auto;
 }
 
 .best_selling_single_item{
@@ -641,14 +691,14 @@
     background-color: #f5f6f6;
     overflow: hidden;
     border-radius: 0.5rem;
-    width: 21.5vw;
-    height: 21vw;
+    /* width: 21.5vw; */
+    /* height: 28vw; */
 }
 
 .services_help_content{
     margin: 2rem 6rem 1rem 2rem;
     h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
     }
     p{

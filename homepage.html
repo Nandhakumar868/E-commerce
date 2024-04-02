@@ -17,8 +17,20 @@
             <button><span class="material-symbols-outlined" id="phone_button">call</span>+001234567890</button>
             <p>Get 50% off on Selected items | Shop Now</p>
             <div class="location">
-                <button>Eng <span class="material-symbols-outlined" id="arrow_down">keyboard_arrow_down</span></button>
-                <button>Location <span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                <button class="category_language">Eng <span class="material-symbols-outlined" id="arrow_down">keyboard_arrow_down</span>
+                    <ul class="category_language_list">
+                        <li>Tamil</li><hr>
+                        <li>English</li><hr>
+                        <li>Hindi</li>
+                    </ul>
+                </button>
+                <button class="category_location">Location <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    <ul class="category_location_list">
+                        <li>India</li><hr>
+                        <li>Dhaka</li><hr>
+                        <li>USA</li>
+                    </ul>
+                </button>
             </div>
         </div>
     
@@ -26,7 +38,64 @@
             <img src="images/logo.svg" alt="ShopCart Logo">
             
             <nav>
-                <button class="category_button">Categories <span class="material-symbols-outlined">Keyboard_arrow_down</span></button>
+                <button class="popular_category_items">Categories<span class="material-symbols-outlined">Keyboard_arrow_down</span>
+                    <div class="popular_category">
+                        <h2>Popular Categories</h2>
+                        <hr>
+
+                        <div class="popular_category_list">
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/furniture.png" alt="Furniture">
+                                <div class="popular_category_content">
+                                    <h4>Furniture</h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/handbag.png" alt="Hand Bag">
+                                <div class="popular_category_content">
+                                    <h4>Hand bag</h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/shoe.png" alt="Shoe">
+                                <div class="popular_category_content">
+                                    <h4>Shoe</h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/headphone.png" alt="Headphone">
+                                <div class="popular_category_content">
+                                    <h4><a href="headphonepage.html">Headphone</a></h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/laptop.png" alt="Laptop">
+                                <div class="popular_category_content">
+                                    <h4>Laptop</h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                            <div class="single_popular_category">
+                                <img src="images/Header/categories/book.png" alt="Book">
+                                <div class="popular_category_content">
+                                    <h4>Book</h4>
+                                    <p>240 Item Available</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </button>
                 <button>Deals</button>
                 <button>What's new</button>
                 <button>Delivery</button>
@@ -47,13 +116,11 @@
         <section class="banner-area">
 
             <div class="banner_image">
+                <div id="banner_image_1" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_1.png" loading="lazy" alt="Banner Image 1"></div>
+                <div id="banner_image_2" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_2.png" loading="lazy" alt="Banner Image 2"></div>
+                <div id="banner_image_3" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_3.png" loading="lazy" alt="Banner Image 3"></div>
+                <div id="banner_image_4" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_4.png" loading="lazy" alt="Banner Image 4"></div>
                 <div id="banner_background"><img src="images/HomePage/Banner/banner.png" loading="lazy" alt="Banner Background"></div>
-                <div class="banner_overlay">
-                    <div id="banner_image_1" loading="lazy" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_1.png" alt="Banner Image 1"></div>
-                    <div id="banner_image_2" loading="lazy" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_2.png" alt="Banner Image 2"></div>
-                    <div id="banner_image_3" loading="lazy" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_3.png" alt="Banner Image 3"></div>
-                    <div id="banner_image_4" loading="lazy" class="banner_overlay_images"><img src="images/HomePage/Banner/banner_image_4.png" alt="Banner Image 4"></div>
-                </div>
             </div>
 
             <div class="banner_content">
@@ -161,6 +228,10 @@
                         </div>
                     </div> -->
 
+                    <div class="swiper_pagination">
+                        <span class="swiper_pagination_progressbar_fill"></span>
+                    </div>
+
                 </div>
             </section>
 
@@ -171,7 +242,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/staples.png" alt="Staples" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Staples</h3>
+                            <h4 class="brand_name">Staples</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -179,7 +250,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/sprouts.png" alt="Sprouts" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Sprouts</h3>
+                            <h4 class="brand_name">Sprouts</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -187,7 +258,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/grocery_outlet.png" alt="Grocery Outlet" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Grocery outlet</h3>
+                            <h4 class="brand_name">Grocery outlet</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -195,7 +266,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/mollie_stones.png" alt="Mollie Stones" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Mollie stones</h3>
+                            <h4 class="brand_name">Mollie stones</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -203,7 +274,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/sports_basement.png" alt="Sports Basement" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Sports Basement</h3>
+                            <h4 class="brand_name">Sports Basement</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -211,7 +282,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/container_store.png" alt="Container Store" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Container Store</h3>
+                            <h4 class="brand_name">Container Store</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -219,7 +290,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/target.png" alt="Target" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Target</h3>
+                            <h4 class="brand_name">Target</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -227,7 +298,7 @@
                     <div class="single_brand">
                         <img src="images/HomePage/Choose_brand/bevmo.png" alt="Bevmo" class="brand_image">
                         <div class="brand_content">
-                            <h3 class="brand_name">Bevmo!</h3>
+                            <h4 class="brand_name">Bevmo!</h4>
                             <p class="delivery_time">Delivery with in 24 hours</p>
                         </div>
                     </div>
@@ -581,7 +652,6 @@
         </Footer>
     </div>
 
-    <script src="js/homepage_script.js"></script>
-
 </body>
+<script src="js/homepage_script.js"></script>
 </html>
