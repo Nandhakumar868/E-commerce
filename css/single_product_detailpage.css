@@ -1,0 +1,364 @@
+.single_product_detail_page{
+    margin: 0 8vw;
+}
+
+/* Headphone Page Url */
+
+.headphone_page_url{
+    font-weight: 500;
+    color: gray;
+    margin: 2vw 0;
+    span{
+        color: black;
+    }
+}
+
+/* Headphone Single Product Content */
+
+.headphone_single_product_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+}
+
+    /* Image */
+
+.single_headphone_image_container{
+    background-color: #f5f6f6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 35vw;
+}
+
+.single_headphone_image{
+    width: 100%;
+    object-fit: fill;
+}
+
+    /* Product Detail */
+
+.headphone_single_product_description{
+   h1{
+    font-size: 2.5rem;
+   }
+   p{
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(62, 60, 60);
+    line-height: 1.2rem;
+   }
+}
+
+.headphone_single_product_ratings{
+    display: flex;
+    align-items: center;
+    span{
+        color: green;
+        font-size: 1.5rem;
+        font-variation-settings:
+        'FILL' 1,
+        'opsz' 48
+    }
+}
+
+.headphone_single_product_price{
+    margin: 1.5rem 0 2rem;
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        margin-top: 0.3rem;
+        color: gray;
+        font-size: 1rem;
+    }
+}
+
+.headphone_single_product_quantity{
+    display: flex;
+    align-items: center;
+}
+
+.headphone_single_product_no_of_products{
+    background-color: #cbcccc;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    position: relative;
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        font-weight: 100;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+}
+
+.headphone_single_product_quantity_list span{
+    color: red;
+}
+
+.headphone_single_product_buttons_to_buy{
+    margin: 1.5rem 0 1rem;
+    button{
+        padding: 0.6rem 2rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 3rem;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.buy_now_button{
+    color: white;
+    background-color: #003d29;
+    border: 1px solid transparent;
+}
+
+.add_to_cart_button{
+    background-color: transparent;
+}
+
+.headphone_single_product_free_delivery{
+    display: flex;
+    align-items: center;
+    span{
+        color: orange;
+        margin-right: 0.5rem;
+    }
+}
+
+.headphone_single_product_free_delivery_detail{
+    margin: 2rem 0;
+    p{
+    text-decoration: underline;
+    color: rgb(49, 47, 47);
+    margin-left: 2rem;
+    }
+}
+
+.headphone_single_product_return_delivery{
+    display: flex;
+    align-items: center;
+    span{
+        color: orange;
+        margin-right: 0.5rem;
+    }
+}
+
+.headphone_single_product_return_delivery_detail{
+    margin: 2rem 0;
+    p{
+    color: rgb(49, 47, 47);
+    margin-left: 2rem;
+    span{
+        text-decoration: underline;
+    }
+    }
+}
+
+/* Headphone Single Product Detailed Description */
+
+.section_title_wrap{
+    margin: 3.5rem 0 2rem;
+}
+
+.detailed_description_tables{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+
+.general_specification_table{
+    h1{
+        margin-bottom: 1rem;
+    }
+    background-color: rgb(167, 162, 162);
+    padding: 2.5rem;
+}
+
+.general_specification_table_list{
+    width: 100%;
+    td{
+        padding: 1rem;
+    }
+    tr:nth-child(odd){
+        background-color: rgb(249, 245, 245);
+    }
+}
+
+.general_specification_table_row_title{
+    font-weight: bold;
+}
+
+/* Similar Products List */
+
+.similar_items_list{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.similar_items_list::-webkit-scrollbar{
+    width: 5px;
+    height: 0.35rem;
+    background-color: #aaa;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.similar_items_list::-webkit-scrollbar-thumb{
+    background-color: #6c6663;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.single_deal{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 2vw 1.5vw 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.deal_thumbnail_wrap{
+    background-color: #f5f6f6;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 26.35vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_deal_image{
+    overflow: hidden;
+}
+
+.deal_image{
+    width: 100%;
+    object-fit: fill;
+    transition: transform 0.3s ease-in-out;
+}
+
+.single_deal:hover .deal_image{
+    transform: scale(1.2);
+}
+
+#product_wishlist{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+#product_wishlist:hover{
+    background-color: rgb(235, 179, 188);
+}
+
+.product_content{
+    padding: 0.2rem;
+}
+
+.product_title_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.product_price{
+    font-weight: 800;
+}
+
+.product_detail{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(96, 92, 92);
+}
+
+.product_star_wrap{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.product_star_wrap span{
+    color: green;
+    font-size: 1.3rem;
+    font-variation-settings:
+    'FILL' 1,
+    'opsz' 48
+}
+
+.product_button{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1rem;
+    width: 6vw;
+}
+
+.product_button:hover{
+    background-color: rgb(10, 76, 10);
+    color: white;
+    border: 1px solid rgb(10, 76, 10);
+}
+
+/* Choose Brand */
+
+.brand_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+}
+
+.single_brand{
+    background-color: #f5f6f6;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 1vw 2vw;
+}
+
+.single_brand:hover{
+    border: 1px solid black;
+}
+
+.brand_image{
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand_image:hover{
+    transform: scale(1.2);
+}
+
+.brand_content{
+    margin-left: 1vw;
+    p{
+        font-size: 0.74rem;
+    }
+}

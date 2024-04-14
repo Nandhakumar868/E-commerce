@@ -1,0 +1,346 @@
+.headphone_page{
+    margin: 0  8vw;
+}
+
+/* Headphone Page Banner */
+
+.headphone_banner{
+    background-color: #fbf0e4;
+    border-radius: 0.5rem;
+    margin: 1rem 0 4rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 13vw;
+}
+
+.headphone_banner_title{
+    color: #003d29;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.headphone_banner_button{
+    padding: 0.7rem 1.5rem;
+    background-color: #003d29;
+    border-radius: 3rem;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+.headphone_banner_image_container{
+    overflow: hidden;
+    height: 38vh;
+    img{
+        height: 38vh;
+        width: 100%;
+    }
+}
+
+/* Headphone Page Buttons List */
+
+.headphone_buttons_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headphone_filter_buttons{
+    display: flex;
+}
+
+.headphone_single_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f6f6;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 3rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    span{
+        margin-left: 0.4rem;
+    }
+}
+
+#sort_by_button{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+/* Headphones Product List */
+
+.section_title_wrap{
+    margin: 4rem 0 2.5rem;
+}
+
+/* Product List */
+
+.headphone_product_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.single_headphone_product{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 2vw 1.5vw 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.headphone_thumbnail_wrap{
+    background-color: #f5f6f6;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_headphone_image{
+    overflow: hidden;
+}
+
+.headphone_image{
+    width: 100%;
+    object-fit: fill;
+    transition: transform 0.3s ease-in-out;
+}
+
+.single_headphone_product:hover .headphone_image{
+    transform: scale(1.2);
+}
+
+#headphone_product_wishlist{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+#headphone_product_wishlist:hover{
+    background-color: rgb(235, 179, 188);
+}
+
+.headphone_product_content{
+    padding: 0.2rem;
+}
+
+.headphone_product_title_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.headphone_product_price{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.headphone_product_detail{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(96, 92, 92);
+}
+
+.headphone_product_star_wrap{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.headphone_product_star_wrap span{
+    color: green;
+    font-size: 1.3rem;
+    font-variation-settings:
+    'FILL' 1,
+    'opsz' 48
+}
+
+.headphone_product_button{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1rem;
+    width: 5.6vw;
+}
+
+.headphone_product_button:hover{
+    background-color: rgb(10, 76, 10);
+    color: white;
+    border: 1px solid rgb(10, 76, 10);
+}
+
+/* Weekly Popular Products */
+
+.weekly_popular_products_list{
+    display: flex;
+    overflow: auto;
+}
+
+.weekly_popular_products_list::-webkit-scrollbar{
+    width: 5px;
+    height: 0.35rem;
+    background-color: #aaa;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.weekly_popular_products_list::-webkit-scrollbar-thumb{
+    background-color: #6c6663;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+
+.single_deal{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 2vw 1.5vw 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.deal_thumbnail_wrap{
+    background-color: #f5f6f6;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 26.35vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_deal_image{
+    overflow: hidden;
+}
+
+.deal_image{
+    width: 100%;
+    object-fit: fill;
+    transition: transform 0.3s ease-in-out;
+}
+
+.single_deal:hover .deal_image{
+    transform: scale(1.2);
+}
+
+#product_wishlist{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+#product_wishlist:hover{
+    background-color: rgb(235, 179, 188);
+}
+
+.product_content{
+    padding: 0.2rem;
+}
+
+.product_title_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.product_price{
+    font-weight: 800;
+}
+
+.product_detail{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(96, 92, 92);
+}
+
+.product_star_wrap{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.product_star_wrap span{
+    color: green;
+    font-size: 1.3rem;
+    font-variation-settings:
+    'FILL' 1,
+    'opsz' 48
+}
+
+.product_button{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1rem;
+    width: 6vw;
+}
+
+.product_button:hover{
+    background-color: rgb(10, 76, 10);
+    color: white;
+    border: 1px solid rgb(10, 76, 10);
+}
+
+/* Services to help */
+
+.services_to_help_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+
+.services_help_single_item{
+    background-color: #f5f6f6;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.services_help_content{
+    margin: 2rem 6rem 1rem 2rem;
+    overflow: hidden;
+    h3{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: gray;
+    }
+}
+
+.services_help_thumbnail{
+    overflow: hidden;
+}
+
+.services_help_image{
+    transition: transform 0.3s ease-in-out;
+}
+
+.services_help_single_item:hover .services_help_image{
+    transform: scale(1.2);
+}

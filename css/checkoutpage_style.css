@@ -1,0 +1,299 @@
+.checkout_page{
+    margin: 0 8vw;
+}
+
+/* Checkout Url */
+
+.checkout_page_url{
+    margin: 2vw 0;
+    color: gray;
+    span{
+        color: black;
+    }
+}
+
+/* Product Checkout Details */
+
+.single_product_checkout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+}
+
+/* Product Information */
+
+.product_information{
+    border: 1px solid rgb(183, 179, 179);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    width: 43vw;
+}
+
+.product_specific_information{
+    display: flex;
+    align-items: center;
+}
+
+.product_image{
+    background-color: #f5f6f6;
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 0 0;
+    img{
+        width: 100%;
+    }
+}
+
+.product_details{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+    p{
+        margin-top: 0.3rem;
+    }
+}
+
+.product_price{
+    text-align: right;
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-weight: 600;
+    }
+}
+
+/* Returning Customer */
+
+.returning_customer_details{
+    margin: 2vw 0;
+    display: flex;
+    align-items: center;
+    label{
+        margin-left: 0.5rem;
+    }
+}
+
+/* Customer Details */
+
+.customer_details{
+    border: 1px solid rgb(183, 179, 179);
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+
+.customer_details_title{
+    display: flex;
+    justify-content: space-between;
+    button{
+        border-radius: 3rem;
+        padding: 0.2rem 0.5rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+}
+
+.customer_information_table{
+    width: 100%;
+    td{
+        padding: 0.3rem 0;
+    }
+    input{
+        width: 90%;
+        padding: 0.5rem 0.3rem;
+        border: 1px solid rgb(217, 216, 216);
+        border-radius: 0.5rem;
+    }
+}
+
+.customer_information_table{
+    input:focus{
+        border: 1px solid rgb(217, 216, 216);
+        outline: none;
+    }
+}
+
+.address_field{
+    width: 100vw;
+    input{
+        width: 95.3%;
+    }
+}
+
+/* Order Summary */
+
+.order_summary{
+    border: 1px solid rgb(183, 179, 179);
+    border-radius: 0.5rem;
+    margin-left: 2vw;
+    padding: 3rem;
+}
+
+.horizontal_border{
+    border: 1px solid rgb(213, 210, 210);
+    margin: 0.7rem 0;
+}
+
+.order_summary input{
+    border: 1px solid rgb(211, 207, 207);
+    outline: none;
+}
+
+.order_summary input:focus{
+    border: 1px solid rgb(211, 207, 207);
+    outline: none;
+}
+
+.coupon_code{
+    background-color: rgb(188, 184, 184);
+    border-radius: 3rem;
+    padding: 0.1rem 0;
+    margin: 2rem 0;
+    input{
+        border: 1px solid transparent;
+        background-color: transparent;
+        outline: none;
+        margin-left: 0.3rem;
+        width: 64.9%;
+    }
+    input:focus{
+        border: 1px solid transparent;
+        outline: none;
+    }
+    button{
+        padding: 0.5rem 1rem;
+        border-radius: 3rem;
+        color: white;
+        background-color: #003d39;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+}
+
+.payment_details_title{
+    margin: 1.5rem 0 1rem;
+}
+
+.payment_options{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.single_payment_option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    input{
+        margin-right: 0.4rem;
+    }
+}
+
+.payment_images{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 1rem;
+    }
+}
+
+.mastercard_payment_image{
+    border: 1px solid green;
+    padding: 0.2rem;
+}
+
+.customer_card_details{
+    td{
+        padding: 0.2rem 0;
+    }
+    input{
+        padding: 0.6rem 0 0.6rem 0.3rem;
+        border-radius: 0.5rem;
+        text-align: left;
+    }
+}
+
+.customer_card_input{
+    width: 96.5%;
+}
+
+.customer_card_number{
+    position: relative;
+    input{
+        padding-left: 2.3rem;
+        width: 88.5%;
+    }
+    span{
+        position: absolute;
+        color: gray;
+        left: 0.7rem;
+        top: 0.5rem;
+    }
+}
+
+.payment_detail_discount_title{
+    font-weight: bold;
+}
+
+.payment_detail_discount_detail{
+    text-align: right;
+}
+
+#total_bill{
+    text-align: right;
+}
+
+.payment_button{
+    border: none;
+    border-radius: 3rem;
+    background-color: #003d29;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 98%;
+    margin: 0.8rem 0.3rem 0;
+    cursor: pointer;
+}
+
+.customer_cvc_detail{
+    label{
+        margin-left: 1rem;
+    }
+    input{
+        margin-left: 1rem;
+    }
+}
+
+/* Payment Discount Card */
+
+.payment_discount{
+    background-color: rgba(230, 208, 212, 0.4);
+    margin: 1rem 0 0 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.discount_image_container img{
+    transform: rotate(3deg);
+    width: 10vw;
+    height: 10vh;
+    margin-right: 1rem;
+}
+
+.cashback_details{
+    font-weight: bold;
+    span{
+        font-weight: 100;
+    }
+}
+
+.more_discount_details{
+    font-size: 1rem;
+    color: gray;
+    text-decoration: underline;
+}

@@ -12,9 +12,9 @@
 
 .header{
     background-color: green;
-    /* width: 100vw; */
     display: flex;
     padding: 0.5vw;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw 4vw 0 4vw;
+    margin: 1vw 8vw 0 8vw;
 }
 
 .navbar button{
@@ -61,23 +61,23 @@ nav, .user{
     display: flex;
 }
 
-input{
-    border-radius: 1rem;
-    padding: 0.4vw;
-    width: 12vw;
-}
 
 .search_bar span{
     position: absolute;
 }
 
 #search_icon{
-    right: 19vw;
+    right: 23vw;
     padding: 0.2vw;
 }
 
 .search_bar{
     margin-right: 3vw;
+    input{
+        border-radius: 1rem;
+        padding: 0.4vw;
+        width: 12vw;
+    }    
 }
 
 .navbar button{
@@ -151,7 +151,7 @@ input{
     display: none;
     hr{
         margin: 1.5rem 0;
-        border:1px solid #f5f6f6;
+        border:1px solid #d3d5d5;
     }
 }
 

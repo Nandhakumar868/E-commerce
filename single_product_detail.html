@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/navbar_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
-    <link rel="stylesheet" href="css/headphonepage_style.css">
-    <title>ShopCart</title>
+    <link rel="stylesheet" href="css/single_product_detailpage.css">
+    <title>ShopCArt</title>
 </head>
 <body>
 
@@ -111,99 +111,146 @@
         </div>
     </header>
 
-    <div class="headphone_page">
+    <div class="single_product_detail_page">
 
-        <section class="headphone_banner">
-            <div class="headphone_banner_content">
-                <h1 class="headphone_banner_title">Grab Upto 50% Off On <br> Selected Headphone</h1>
-                <button class="headphone_banner_button">Buy Now</button>
-            </div>
-            <div class="headphone_banner_image_container"><img src="images/HeadphonePage/Banner/banner.png" alt="Banner" loading="lazy"></div>
-        </section>
+        <p class="headphone_page_url">Electronics / Audio / Headphones / Shop Headphones by type / <span>airpods-max</span></p>
 
-        <section class="headphone_buttons_list">
-            <div class="headphone_filter_buttons">
-                <button class="headphone_single_button">Headphone Type<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">Price<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">Review<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">Color<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">Material<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">Offer<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-                <button class="headphone_single_button">All Filters<span class="material-symbols-outlined">tune</span></button>
-            </div>
-            <button class="headphone_single_button" id="sort_by_button">Sort By<span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-        </section>
+        <section class="headphone_single_product_content">
 
-        <section class="headphones_page_product_list">
-            <h1 class="section_title_wrap">Headphones For You!</h1>
-            <div class="headphone_product_list">
+            <div class="single_headphone_image_container"><img src="images/HomePage/Today_deals/headphones.png" alt="Headphones" class="single_headphone_image"></div>
 
-                <!-- <div class="single_headphone_product">
-                    <div class="headphone_thumbnail_wrap">
-                        <div class="single_headphone_image"><img src="images/HeadphonePage/ProductList/head_phones.png" alt="Headphone" class="headphone_image"></div>
-                        <span class="material-symbols-outlined" id="headphone_product_wishlist">Favorite</span>
+            <div class="headphone_single_product_details">
+                <div class="headphone_single_product_description">
+                    <h1>Airpods - Max</h1>
+                    <p>A perfect balance of exhilarating high-fidelity audio and the <br> effortless magic of AirPods.</p>
+                    <div class="headphone_single_product_ratings">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <p>(121)</p>
                     </div>
-                    <div class="headphone_product_content">
-                        <div class="headphone_product_title_wrap">
-                            <h3 class="headphone_product_title">Wireless Earbuds</h3>
-                            <p class="headphone_product_price"><sup>$</sup>99<sup>.00</sup></p>
-                        </div>
-                        <p class="headphone_product_detail">5 colors available</p>
-                        <div class="headphone_product_star_wrap">
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <p class="headphone_review">(121)</p>
-                        </div>
-                        <button class="headphone_product_button">Add to Cart</button>
+                </div>
+                <div class="headphone_single_product_price">
+                    <h2>$549.00 or 99.99/month</h2>
+                    <p>Suggested payments with 6 months special financing</p>
+                </div>
+                <div class="headphone_single_product_quantity">
+                    <div class="headphone_single_product_no_of_products">
+                        <button class="quantity_decrement_button"><span class="material-symbols-outlined">remove</span></button>
+                        <p class="quantity_numbers">1</p>
+                        <button class="quantity_increment_button">+</button>
                     </div>
-                </div> -->
-
+                    <p class="headphone_single_product_quantity_list">Only <span>12 items </span>Left! <br> Don't miss it</p>
+                </div>
+                <div class="headphone_single_product_buttons_to_buy">
+                    <a href="checkoutpage.html"><button class="buy_now_button">Buy Now</button></a>
+                    <button class="add_to_cart_button">Add to Cart</button>
+                </div>
+                <div class="headphone_single_product_free_delivery_detail">
+                    <div class="headphone_single_product_free_delivery">
+                        <span class="material-symbols-outlined">local_shipping</span>
+                        <h5>Free Delivery</h5>
+                    </div>
+                    <p>Enter you Postal code for Delivery Availability</p>
+                </div>
+                <div class="headphone_single_product_return_delivery_detail">
+                    <div class="headphone_single_product_return_delivery">
+                        <span class="material-symbols-outlined">content_paste</span>
+                        <h5>Return Delivery</h5>
+                    </div>
+                    <p>Free 30days Delivery Returns. <span>Details</span></p>
+                </div>
             </div>
+
         </section>
 
-        <section class="weekly_product_list_area">
-            <h1 class="section_title_wrap">Weekly Popular Products</h1>
-            <div class="weekly_popular_products_list"></div>
-        </section>
+        <section class="headphone_single_product_detailed_description">
+            <h1 class="section_title_wrap">Apple Airpods Mac Wireless Headphones Full Specifications</h1>
 
-        <section class="services_to_help_area">
-            <h1 class="section_title_wrap">Services To Help You Shop</h1>
-            <div class="services_to_help_list">
+            <div class="detailed_description_tables">
 
-                <div class="services_help_single_item">
-                    <div class="services_help_content">
-                        <h3>Frequently Asked Questions</h3>
-                        <p>Updates on safe shopping in our store</p>
-                    </div>
-                    <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_1.png" alt="Service Questions" loading="lazy" class="services_help_image"></div>
+                <div class="general_specification_table">
+                    <h1>General</h1>
+                    <table class="general_specification_table_list">
+                        <tr>
+                            <td class="general_specification_table_row_title">Brand</td>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Model</td>
+                            <td>Model Airpods Max Wireless Headphones</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Price</td>
+                            <td>$549.00</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Release date</td>
+                            <td>December 2020</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Model Number</td>
+                            <td>AirPods Max</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Headphone Type</td>
+                            <td>Over-Ear</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Connectivity</td>
+                            <td>Wireless</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div class="services_help_single_item">
-                    <div class="services_help_content">
-                        <h3>Online Payment process</h3>
-                        <p>Updates on safe shopping in our store</p>
-                    </div>
-                    <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_2.png" alt="Payment Questions" loading="lazy" class="services_help_image"></div>
+                <div class="general_specification_table">
+                    <h1>Product details</h1>
+                    <table class="general_specification_table_list">
+                        <tr>
+                            <td class="general_specification_table_row_title">Microphone</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Driver Type</td>
+                            <td>Dynamic</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Driver Size (mm)</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Number of Drivers</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Water Resistant</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Weight (g)</td>
+                            <td>385.00</td>
+                        </tr>
+                        <tr>
+                            <td class="general_specification_table_row_title">Battery Life (Hrs)</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div class="services_help_single_item">
-                    <div class="services_help_content">
-                        <h3>Home Delivery Options</h3>
-                        <p>Updates on safe shopping in our store</p>
-                    </div>
-                    <div class="services_help_thumbnail"><img src="images/HomePage/Services/service_image_3.png" alt="Delivery Questions" loading="lazy" class="services_help_image"></div>
-                </div>
-                
             </div>
+        </section>
+
+        <section>
+            <h1 class="section_title_wrap">Similar Items You Might Like</h1>
+            <div class="similar_items_list"></div>
         </section>
 
     </div>
 
-    <div class="headphone_page">
-
+    <div class="single_product_detail_page">
+ 
         <hr class="footer_divider">
 
         <Footer>
@@ -310,6 +357,6 @@
     </div>
     
 </body>
-<script src="js/headphone_script.js"></script>
+<script src="js/single_product_detail_script.js"></script>
 <script src="js/header_script.js"></script>
 </html>
