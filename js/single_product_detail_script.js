@@ -137,3 +137,22 @@ function createTodayDealElement(dealData){
 
 const newTodayDealsElement = todayDealsData.map(createTodayDealElement);
 todayDealsElement.append(...newTodayDealsElement);
+
+
+const quantityDecrementButton = document.querySelector('.quantity_decrement_button');
+  const quantityNumberDisplay = document.querySelector('.quantity_numbers');
+  const quantityIncrementButton = document.querySelector('.quantity_increment_button');
+
+  let quantity = 1; // Initial quantity value
+
+  quantityDecrementButton.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity--;
+    }
+    quantityNumberDisplay.textContent = quantity;
+  });
+
+  quantityIncrementButton.addEventListener('click', () => {
+    quantity++;
+    quantityNumberDisplay.textContent = quantity;
+  });

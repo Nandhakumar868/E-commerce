@@ -41,7 +41,7 @@
 #banner_image_1{
     overflow: hidden;
     position: absolute;
-    bottom: 11vw;
+    bottom: 20vh;
     right: 40vw;
 }
 
@@ -53,21 +53,21 @@
 #banner_image_2{
     overflow: hidden;
     position: absolute;
-    bottom: 12.5vw;
+    bottom: 23vh;
     right: 15vw;
 }
 
 #banner_image_3{
     overflow: hidden;
     position: absolute;
-    bottom: 17.5vw;
+    bottom: 33vh;
     right: 30vw;
 }
 
 #banner_image_4{
     overflow: hidden;
     position: absolute;
-    bottom: 27vw;
+    bottom: 51vh;
     right: 9vw;
 }
 
@@ -358,10 +358,12 @@
 .discount_image_container{
     overflow: hidden;
     width: 100%;
+    height: 100%;
 }
 
 .discount_image{
     width: 100%;
+    height: 52%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -826,9 +828,13 @@
 
 .services_help_thumbnail{
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .services_help_image{
+    width: 100%;
+    height: 60%;
     transition: transform 0.3s ease-in-out;
 }
 
