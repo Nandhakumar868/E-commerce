@@ -529,71 +529,137 @@ const sneakersProductList = document.getElementById('sneakers_product_list');
 
 //Gadget Product List
 
+const gadgetProductData = [
+    {
+        imageUrl: './images/HomePage/Today_deals/homepod_mini.png',
+        title: 'Homepod mini',
+        price: 99,
+        detail: '5 colors available',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/instax_mini.png',
+        title: 'Instax mini 9',
+        price: 99,
+        detail: 'Selfie mode and selfie mirror, Macro mode',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
+        title: 'Base Camp Duffel M',
+        price: 159,
+        detail: 'Color - Summit Fold Swirl - TNF Black',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/tot_medium.png',
+        title: 'Tote e Medium',
+        price: 1259,
+        detail: 'Canvas, full grain leather',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/laptop_sleeve.png',
+        title: 'Laptop sleeve MacBook',
+        price: 59,
+        detail: 'Organic Cotton, fairtrade certified',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/Pendelton_water_bottle.png',
+        title: 'Pendelton Water Bottle',
+        price: 59,
+        detail: 'Stainless steel,Food safe,Hand wash',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/hand_watch.png',
+        title: 'Hand Watch',
+        price: 299,
+        detail: 'Citizen 650M, W-65g',
+        reviews: 121,
+        tag: 'gadgets'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/headphones.png',
+        title: 'Headphones',
+        price: 559,
+        detail: 'A perfect balance of high-fiedelity audio',
+        reviews: 121,
+        tag: 'gadgets' 
+    }
+]
+
 gadgetsButton.addEventListener('click', () => {
     gadgetsButton.style.backgroundColor = '#003d29';
     fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
 
     gadgetsButton.style.color = 'white';
     fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
 
     gadgetProductList.style.display = 'grid';
     fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
 });
 
-const newGadgetProductList = todayDealsData.map(createSingleProductList);
+const newGadgetProductList = gadgetProductData.map(createSingleProductList);
 gadgetProductList.append(...newGadgetProductList);
 
 
 // Fashion Product List
 
+const fashionProductData = [
+    {
+        imageUrl: './images/HomePage/Best_deals/head_phones.png',
+        title: 'Gaming Headphones',
+        price: 239,
+        detail: 'A perfext balance of high-fiedelity audio',
+        reviews: 121,
+        tag: 'fashion'
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
+        title: 'Base Camp Duffel M',
+        price: 159,
+        detail: 'Color - Summit Fold Swirl - TNF Black',
+        reviews: 121,
+        tag: 'fashion'
+    },
+    {
+        imageUrl: './images/HomePage/Best_deals/hand_watch.png',
+        title: 'Tomford Watch',
+        price: 590,
+        detail: 'Sleek wrist watch',
+        reviews: 121,
+        taf: 'fashion'
+    },
+    {
+        imageUrl: './images/HomePage/Best_deals/cabin.png',
+        title: 'Cabin',
+        price: 59,
+        detail: 'Polycarbonate, kk metal',
+        reviews: 121,
+        tag: 'fashion'
+    }
+]
+
 fashionButton.addEventListener('click', () => {
     gadgetsButton.style.backgroundColor = 'transparent';
     fashionButton.style.backgroundColor = '#003d29';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
 
     gadgetsButton.style.color = 'black';
     fashionButton.style.color = 'white';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
 
     gadgetProductList.style.display = 'none';
     fashionProductList.style.display = 'grid';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
 });
 
-const newFashionProductList = weeklyProductData.map(createSingleProductList);
+const newFashionProductList = fashionProductData.map(createSingleProductList);
 fashionProductList.append(...newFashionProductList);
 
 

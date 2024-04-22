@@ -20,3 +20,20 @@ function handleClickOutside(event){
 popularCategory.addEventListener('click', (event) => {
     event.stopPropagation();
 });
+
+
+
+const searchInput = document.getElementById('search_input')
+
+searchInput.addEventListener('keyup', function() {
+    const searchTerm = this.value.toLowerCase();
+  
+    if (searchTerm === 'headphones' || searchTerm.includes('headphones')) {
+      // Redirect to the headphones page URL
+      window.location.href = '/headphonepage.html'; // Assuming headphones page URL is '/headphones'
+    } else {
+      // Handle non-headphones search (optional: display a message)
+      console.log('Search term is not "headphones".');
+    }
+});
+  

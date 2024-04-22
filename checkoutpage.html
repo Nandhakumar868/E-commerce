@@ -102,7 +102,7 @@
             </nav>
             <div class="user">
                 <div class="search_bar">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" id="search_input">
                     <span class="material-symbols-outlined" id="search_icon">search</span>
                 </div>
                 <button> <span class="material-symbols-outlined">shopping_cart</span>Cart</button>
@@ -198,74 +198,76 @@
                     <h2 class="payment_details_title">Payment Details</h2>
                     <hr class="horizontal_border">
                     <div class="payment_options">
-                        <div class="single_payment_option"><input type="radio" name="payment"> Cash on Delivery</div>
-                        <div class="single_payment_option"><input type="radio" name="payment"> Shopcart Card</div>
-                        <div class="single_payment_option"><input type="radio" name="payment"> Paypal</div>
-                        <div class="single_payment_option"><input type="radio" name="payment"> Credit or Debit card</div>              
+                        <div class="single_payment_option"><input type="radio" name="payment" required> Cash on Delivery</div>
+                        <div class="single_payment_option"><input type="radio" name="payment" required> Shopcart Card</div>
+                        <div class="single_payment_option"><input type="radio" name="payment" required> Paypal</div>
+                        <div class="single_payment_option"><input type="radio" name="payment" required> Credit or Debit card</div>              
                     </div>
                     <div class="payment_images">
                         <img src="images/footer/payments/amazon.png" alt="Amazon">
                         <img src="images/footer/payments/mastercard.png" alt="Mastercard" class="mastercard_payment_image">
                         <img src="images/footer/payments/visa.png" alt="Visa">
                     </div>
-                    <form>
-                        <div class="customer_card_details">
-                            <table>
-                                <tr>
-                                    <td>Email <sup>*</sup></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><input type="email" placeholder="Type here.." required class="customer_card_input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Card Holder Name <sup>*</sup></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><input type="text" placeholder="Type here.." required class="customer_card_input"></td>
-                                </tr>
-                                <tr>
-                                    <td>Card Number <sup>*</sup></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="customer_card_number"><span class="material-symbols-outlined">account_balance_wallet</span><input type="number" placeholder="0000*****1245" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Expiry</td>
-                                    <td class="customer_cvc_detail"><label>CVC</label></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="datetime" placeholder="MM/YY"></td>
-                                    <td class="customer_cvc_detail"><input type="number" placeholder="000"></td>
-                                </tr>
-                                <tr>
-                                    <td class="payment_detail_discount_title">Sub Total</td>
-                                    <td class="payment_detail_discount_detail">$549.00</td>
-                                </tr>
-                                <tr>
-                                    <td class="payment_detail_discount_title">Tax(10%)</td>
-                                    <td class="payment_detail_discount_detail">$54.90</td>
-                                </tr>
-                                <tr>
-                                    <td class="payment_detail_discount_title">Coupon Discount</td>
-                                    <td class="payment_detail_discount_detail">-$54.90</td>
-                                </tr>
-                                <tr>
-                                    <td class="payment_detail_discount_title">Shipping Cost</td>
-                                    <td class="payment_detail_discount_detail">-$0.00</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><hr class="horizontal_border"></td>
-                                </tr>
-                                <tr>
-                                    <td class="payment_detail_discount_title">Total</td>
-                                    <td class="payment_detail_discount_title" id="total_bill">=$494.10</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><button class="payment_button">Pay $494.10</button></td>
-                                </tr> 
-                            </table>
-                        </div>
-                    </form>
+                    <div class="credit_or_debit_card_details">
+                        <form>
+                            <div class="customer_card_details">
+                                <table>
+                                    <tr>
+                                        <td>Email <sup>*</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="email" placeholder="Type here.." required class="customer_card_input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Card Holder Name <sup>*</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="text" placeholder="Type here.." required class="customer_card_input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Card Number <sup>*</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="customer_card_number"><span class="material-symbols-outlined">account_balance_wallet</span><input type="number" placeholder="0000*****1245" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expiry</td>
+                                        <td class="customer_cvc_detail"><label>CVC</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="datetime" placeholder="MM/YY"></td>
+                                        <td class="customer_cvc_detail"><input type="number" placeholder="000"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payment_detail_discount_title">Sub Total</td>
+                                        <td class="payment_detail_discount_detail">$549.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payment_detail_discount_title">Tax(10%)</td>
+                                        <td class="payment_detail_discount_detail">$54.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payment_detail_discount_title">Coupon Discount</td>
+                                        <td class="payment_detail_discount_detail">-$54.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payment_detail_discount_title">Shipping Cost</td>
+                                        <td class="payment_detail_discount_detail">-$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><hr class="horizontal_border"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="payment_detail_discount_title">Total</td>
+                                        <td class="payment_detail_discount_title" id="total_bill">=$494.10</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><button class="payment_button">Pay $494.10</button></td>
+                                    </tr> 
+                                </table>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="payment_discount">
                     <div class="discount_image_container"><img src="images/HomePage/discount_banner_two/shopcart_card_3.png" alt="Shopcart card"></div>

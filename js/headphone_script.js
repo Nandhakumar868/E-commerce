@@ -2,52 +2,10 @@
 
 const headphoneProductData = [
     {
-        imageUrl: './images/HomePage/Today_deals/homepod_mini.png',
+        imageUrl: './images/HeadphonePage/ProductList/headphone1.png',
         title: 'Homepod mini',
         price: 99,
         detail: '5 colors available',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/instax_mini.png',
-        title: 'Instax mini 9',
-        price: 99,
-        detail: 'Selfie mode and selfie mirror, Macro mode',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
-        title: 'Base Camp Duffel M',
-        price: 159,
-        detail: 'Color - Summit Fold Swirl - TNF Black',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/tot_medium.png',
-        title: 'Tote e Medium',
-        price: 1259,
-        detail: 'Canvas, full grain leather',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/laptop_sleeve.png',
-        title: 'Laptop sleeve MacBook',
-        price: 59,
-        detail: 'Organic Cotton, fairtrade certified',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/Pendelton_water_bottle.png',
-        title: 'Pendelton Water Bottle',
-        price: 59,
-        detail: 'Stainless steel,Food safe,Hand wash',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_deals/hand_watch.png',
-        title: 'Hand Watch',
-        price: 299,
-        detail: 'Citizen 650M, W-65g',
         reviews: 121,
     },
     {
@@ -55,6 +13,77 @@ const headphoneProductData = [
         title: 'Headphones',
         price: 559,
         detail: 'A perfect balance of high-fiedelity audio',
+        reviews: 121,
+        id: 'headphone_product_2',
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone2.png',
+        title: 'Instax mini 9',
+        price: 99,
+        detail: 'Selfie mode and selfie mirror, Macro mode',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone3.png',
+        title: 'Base Camp Duffel M',
+        price: 159,
+        detail: 'Color - Summit Fold Swirl - TNF Black',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone4.png',
+        title: 'Tote e Medium',
+        price: 1259,
+        detail: 'Canvas, full grain leather',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone5.png',
+        title: 'Laptop sleeve MacBook',
+        price: 59,
+        detail: 'Organic Cotton, fairtrade certified',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone6.png',
+        title: 'Pendelton Water Bottle',
+        price: 59,
+        detail: 'Stainless steel,Food safe,Hand wash',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone7.png',
+        title: 'Hand Watch',
+        price: 299,
+        detail: 'Citizen 650M, W-65g',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone8.png',
+        title: 'Tote e Medium',
+        price: 1259,
+        detail: 'Canvas, full grain leather',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone9.png',
+        title: 'Laptop sleeve MacBook',
+        price: 59,
+        detail: 'Organic Cotton, fairtrade certified',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone10.png',
+        title: 'Pendelton Water Bottle',
+        price: 59,
+        detail: 'Stainless steel,Food safe,Hand wash',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone11.png',
+        title: 'Pendelton Water Bottle',
+        price: 59,
+        detail: 'Stainless steel,Food safe,Hand wash',
         reviews: 121,
     }
 ]
@@ -65,11 +94,8 @@ const headphoneProductElement = document.querySelector('.headphone_product_list'
 function createHeadphoneProductElement(productData){
 
     const singleHeadphoneProduct = document.createElement('div');
+    singleHeadphoneProduct.setAttribute('id',`${productData.id}`);
     singleHeadphoneProduct.classList.add('single_headphone_product');
-
-    singleHeadphoneProduct.addEventListener('click', () => {
-        window.location.href = './single_product_detail.html';
-    })
 
     const headphoneThumbnail = document.createElement('div');
     headphoneThumbnail.classList.add('headphone_thumbnail_wrap');
@@ -142,7 +168,72 @@ function createHeadphoneProductElement(productData){
 const newHeadphoneProductElement = headphoneProductData.map(createHeadphoneProductElement);
 headphoneProductElement.append(...newHeadphoneProductElement);
 
+const singleProductPage = document.getElementById('headphone_product_2');
+
+singleProductPage.addEventListener('click', () => {
+    window.location.href = './single_product_detail.html';
+})
+
 // Weekly Popular Products
+
+const weeklyProductsData = [
+    {
+        imageUrl: './images/HomePage/Today_deals/homepod_mini.png',
+        title: 'Homepod mini',
+        price: 99,
+        detail: '5 colors available',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/instax_mini.png',
+        title: 'Instax mini 9',
+        price: 99,
+        detail: 'Selfie mode and selfie mirror, Macro mode',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
+        title: 'Base Camp Duffel M',
+        price: 159,
+        detail: 'Color - Summit Fold Swirl - TNF Black',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/tot_medium.png',
+        title: 'Tote e Medium',
+        price: 1259,
+        detail: 'Canvas, full grain leather',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/laptop_sleeve.png',
+        title: 'Laptop sleeve MacBook',
+        price: 59,
+        detail: 'Organic Cotton, fairtrade certified',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/Pendelton_water_bottle.png',
+        title: 'Pendelton Water Bottle',
+        price: 59,
+        detail: 'Stainless steel,Food safe,Hand wash',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/hand_watch.png',
+        title: 'Hand Watch',
+        price: 299,
+        detail: 'Citizen 650M, W-65g',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_deals/headphones.png',
+        title: 'Headphones',
+        price: 559,
+        detail: 'A perfect balance of high-fiedelity audio',
+        reviews: 121,
+    }
+]
 
 const weeklyPopularProductList = document.querySelector('.weekly_popular_products_list');
 
@@ -219,5 +310,5 @@ function createTodayDealElement(dealData){
     return singleDealElement;
 }
 
-const newWeeklyPopularProductList = headphoneProductData.map(createTodayDealElement);
+const newWeeklyPopularProductList = weeklyProductsData.map(createTodayDealElement);
 weeklyPopularProductList.append(...newWeeklyPopularProductList);

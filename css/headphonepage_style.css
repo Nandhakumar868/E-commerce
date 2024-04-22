@@ -60,6 +60,7 @@
     border-radius: 3rem;
     margin-right: 1rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
     span{
         margin-left: 0.4rem;
     }
@@ -183,6 +184,27 @@
     background-color: rgb(10, 76, 10);
     color: white;
     border: 1px solid rgb(10, 76, 10);
+}
+
+/* headphone Product single page */
+
+.headphone_product_list_pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.headphone_product_list_single_page{
+    margin-right: 1rem;
+    padding: 1rem 1.3rem;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    span{
+        font-size: 1rem;
+    }
 }
 
 /* Weekly Popular Products */
