@@ -71,6 +71,75 @@
     border: 1px solid black;
 }
 
+#headphone_type_button{
+    position: relative;
+}
+
+.headphone_type_choices{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(189, 155, 155, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    top: 5vh;
+    overflow: hidden;
+    input{
+        margin: 0.5rem 1rem 0.2rem 0;
+    }
+    button{
+        padding: 0.5rem;
+    }
+}
+
+#headphone_type_submit{
+    padding: 0.3rem 0.6rem;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#headphone_color_button{
+    position: relative;
+}
+
+.headphone_color_choices{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(189, 155, 155, 0.7);
+    border-radius: 1rem;
+    padding: 1rem;
+    top: 5vh;
+    overflow: hidden;
+    z-index: 3;
+    input{
+        margin: 0.5rem 1rem 0.2rem 0;
+    }
+    button{
+        padding: 0.5rem;
+    }
+}
+
+#headphone_color_submit{
+    padding: 0.3rem 0.6rem;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
 /* Headphones Product List */
 
 .section_title_wrap{

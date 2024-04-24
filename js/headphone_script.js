@@ -1,5 +1,51 @@
 // Headphone Product List
 
+//  HeadphoneTypeChoices display
+const headphoneTypeButton = document.getElementById('headphone_type_button');
+const headphoneTypeChoices = document.querySelector('.headphone_type_choices');
+const headphoneTypeSubmitButton = document.getElementById('headphone_type_submit');
+
+// HeadphoneTypeColor display
+const headphoneColorButton = document.getElementById('headphone_color_button');
+const headphoneColorChoices = document.querySelector('.headphone_color_choices');
+const headphoneColorSubmitButton = document.getElementById('headphone_color_submit');
+
+// function OutsideCLick
+document.addEventListener('click', handleClickOutside);
+
+function handleClickOutside(event){
+    const clickedElement = event.target;
+
+    if(!headphoneTypeButton.contains(clickedElement)){
+        headphoneTypeChoices.style.display = 'none';
+    }
+    if(!headphoneColorButton.contains(clickedElement)){
+        headphoneColorChoices.style.display = 'none';
+    }
+}
+
+
+// headphoneTypeChoices
+headphoneTypeButton.addEventListener('click', () => {
+    headphoneTypeChoices.style.display = 'flex';
+});
+
+headphoneTypeChoices.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
+
+// HeaphoneColorChoices
+headphoneColorButton.addEventListener('click', () => {
+    headphoneColorChoices.style.display = 'flex';
+});
+
+headphoneColorChoices.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
+// // heaphonePage Product List
+
 const headphoneProductData = [
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone1.png',
@@ -7,6 +53,8 @@ const headphoneProductData = [
         price: 99,
         detail: '5 colors available',
         reviews: 121,
+        headphone_type: 'wired',
+        color: 'black'
     },
     {
         imageUrl: './images/HomePage/Today_deals/headphones.png',
@@ -15,6 +63,8 @@ const headphoneProductData = [
         detail: 'A perfect balance of high-fiedelity audio',
         reviews: 121,
         id: 'headphone_product_2',
+        headphone_type: 'wireless',
+        color: 'pink'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone2.png',
@@ -22,6 +72,8 @@ const headphoneProductData = [
         price: 99,
         detail: 'Selfie mode and selfie mirror, Macro mode',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'mixed'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone3.png',
@@ -29,6 +81,8 @@ const headphoneProductData = [
         price: 159,
         detail: 'Color - Summit Fold Swirl - TNF Black',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone4.png',
@@ -36,6 +90,8 @@ const headphoneProductData = [
         price: 1259,
         detail: 'Canvas, full grain leather',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone5.png',
@@ -43,6 +99,8 @@ const headphoneProductData = [
         price: 59,
         detail: 'Organic Cotton, fairtrade certified',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone6.png',
@@ -50,6 +108,8 @@ const headphoneProductData = [
         price: 59,
         detail: 'Stainless steel,Food safe,Hand wash',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone7.png',
@@ -57,6 +117,8 @@ const headphoneProductData = [
         price: 299,
         detail: 'Citizen 650M, W-65g',
         reviews: 121,
+        headphone_type: 'wired',
+        color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone8.png',
@@ -64,6 +126,8 @@ const headphoneProductData = [
         price: 1259,
         detail: 'Canvas, full grain leather',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone9.png',
@@ -71,6 +135,8 @@ const headphoneProductData = [
         price: 59,
         detail: 'Organic Cotton, fairtrade certified',
         reviews: 121,
+        headphone_type: 'wired',
+        color: 'pink'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone10.png',
@@ -78,6 +144,8 @@ const headphoneProductData = [
         price: 59,
         detail: 'Stainless steel,Food safe,Hand wash',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'green'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone11.png',
@@ -85,10 +153,54 @@ const headphoneProductData = [
         price: 59,
         detail: 'Stainless steel,Food safe,Hand wash',
         reviews: 121,
+        headphone_type: 'wireless',
+        color: 'mixed'
     }
 ]
 
 
+function filterHeadphoneProducts(headphoneData, selectedType){
+    if(!selectedType){
+        return headphoneData;
+    }
+    return headphoneProductData.filter(product => selectedType.includes(product.headphone_type) || selectedType.includes(product.color));
+}
+
+function displayProducts(products){
+    headphoneProductElement.innerHTML = "";
+
+    products.forEach(productData => {
+        const headphoneProduct = createHeadphoneProductElement(productData);
+        headphoneProductElement.appendChild(headphoneProduct);
+    });
+}
+
+// HeadphoneType Filter Function
+
+headphoneTypeSubmitButton.addEventListener('click', () => {
+    const selectedHeadphoneType = [...document.querySelectorAll('.headphone_type_input:checked')]
+    .map(checkbox => checkbox.nextElementSibling.textContent)
+    .join(' | ');
+
+    const headphoneTypeFilteredProducts = filterHeadphoneProducts(headphoneProductData, selectedHeadphoneType);
+    displayProducts(headphoneTypeFilteredProducts);
+    headphoneTypeChoices.style.display = 'none';
+});
+
+// HeadphoneColor Filter Function
+
+headphoneColorSubmitButton.addEventListener('click', () => {
+    const selectedHeadphoneColor = [...document.querySelectorAll('.headphone_color_input:checked')]
+    .map(checkbox => checkbox.nextElementSibling.textContent)
+    .join(' | ');
+
+    const headphoneColorFilteredProducts = filterHeadphoneProducts(headphoneProductData, selectedHeadphoneColor);
+    displayProducts(headphoneColorFilteredProducts);
+    console.log(headphoneColorFilteredProducts);
+    headphoneColorChoices.style.display = 'none';
+});
+
+// // Creating Product List
 const headphoneProductElement = document.querySelector('.headphone_product_list');
 
 function createHeadphoneProductElement(productData){
@@ -108,6 +220,7 @@ function createHeadphoneProductElement(productData){
     headphoneImage.alt = productData.title;
     headphoneImage.setAttribute('loading', 'lazy');
     headphoneImage.classList.add('headphone_image');
+    headphoneImage.setAttribute('id',`${productData.imageid}`);
     singelHeadphoneImage.appendChild(headphoneImage);
     headphoneThumbnail.appendChild(singelHeadphoneImage);
 
@@ -166,15 +279,17 @@ function createHeadphoneProductElement(productData){
 }
 
 const newHeadphoneProductElement = headphoneProductData.map(createHeadphoneProductElement);
-headphoneProductElement.append(...newHeadphoneProductElement);
+// headphoneProductElement.append(...newHeadphoneProductElement);
+newHeadphoneProductElement.forEach(element => headphoneProductElement.appendChild(element));
 
 const singleProductPage = document.getElementById('headphone_product_2');
 
 singleProductPage.addEventListener('click', () => {
     window.location.href = './single_product_detail.html';
-})
+});
 
-// Weekly Popular Products
+
+// // Weekly Popular Products
 
 const weeklyProductsData = [
     {
@@ -312,3 +427,6 @@ function createTodayDealElement(dealData){
 
 const newWeeklyPopularProductList = weeklyProductsData.map(createTodayDealElement);
 weeklyPopularProductList.append(...newWeeklyPopularProductList);
+
+
+

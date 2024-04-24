@@ -498,33 +498,35 @@ const sneakersButton = document.getElementById('sneakers_button');
 
 // Product List
 
-const gadgetProductList = document.getElementById('gadgets_product_list');
-const fashionProductList = document.getElementById('fashion_product_list');
-const toysProductList = document.getElementById('toys_product_list');
-const educationProductList = document.getElementById('education_product_list');
-const beautyProductList = document.getElementById('beauty_product_list');
-const fitnessProductList = document.getElementById('fitness_product_list');
-const furnitureProductList = document.getElementById('furniture_product_list');
-const sneakersProductList = document.getElementById('sneakers_product_list');
+const gadgetProductList = document.getElementById('gadgets_button_product_list');
+const fashionProductList = document.getElementById('fashion_button_product_list');
+const toysProductList = document.getElementById('toys_button_product_list');
+const educationProductList = document.getElementById('education_button_product_list');
+const beautyProductList = document.getElementById('beauty_button_product_list');
+const fitnessProductList = document.getElementById('fitness_button_product_list');
+const furnitureProductList = document.getElementById('furniture_button_product_list');
+const sneakersProductList = document.getElementById('sneakers_button_product_list');
 
-// let initialLoad = true;
 
-// function resetProducts() {
-//     const buttons = document.querySelectorAll('.single_product_button');
-//     buttons.forEach(button => {
-//         button.style.backgroundColor = 'transparent';
-//         button.style.color = 'black';
-//     });
+function handleButtonClick(clickedButton){
+    const allButtons = [gadgetsButton, fashionButton, toysButton, educationButton, beautyButton, fitnessButton, furnitureButton, sneakersButton];
+    allButtons.forEach(button => {
+        button.style.backgroundColor = 'transparent';
+        button.style.color = 'black';
+    });
 
-//     if(initialLoad){
-//         gadgetsButton.style.backgroundColor = '#003d29';
-//         gadgetsButton.style.color = 'white'
-//         gadgetProductList.style.display = 'grid';
-//         initialLoad = false;
-//     }
-// }
+    clickedButton.style.backgroundColor = '#003d29';
+    clickedButton.style.color = 'white';
 
-// window.addEventListener('load',resetProducts);
+    const allProductLists = [gadgetProductList, fashionProductList, toysProductList, educationProductList, beautyProductList, fitnessProductList, furnitureProductList, sneakersProductList];
+    allProductLists.forEach(list => {
+        list.style.display = 'none';
+    });
+
+    const clickedProductId = clickedButton.id + '_product_list';
+    const clickedProductList = document.getElementById(clickedProductId);
+    clickedProductList.style.display = 'grid';
+}
 
 
 //Gadget Product List
@@ -536,7 +538,6 @@ const gadgetProductData = [
         price: 99,
         detail: '5 colors available',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/instax_mini.png',
@@ -544,7 +545,6 @@ const gadgetProductData = [
         price: 99,
         detail: 'Selfie mode and selfie mirror, Macro mode',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
@@ -552,7 +552,6 @@ const gadgetProductData = [
         price: 159,
         detail: 'Color - Summit Fold Swirl - TNF Black',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/tot_medium.png',
@@ -560,7 +559,6 @@ const gadgetProductData = [
         price: 1259,
         detail: 'Canvas, full grain leather',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/laptop_sleeve.png',
@@ -568,7 +566,6 @@ const gadgetProductData = [
         price: 59,
         detail: 'Organic Cotton, fairtrade certified',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/Pendelton_water_bottle.png',
@@ -576,7 +573,6 @@ const gadgetProductData = [
         price: 59,
         detail: 'Stainless steel,Food safe,Hand wash',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/hand_watch.png',
@@ -584,7 +580,6 @@ const gadgetProductData = [
         price: 299,
         detail: 'Citizen 650M, W-65g',
         reviews: 121,
-        tag: 'gadgets'
     },
     {
         imageUrl: './images/HomePage/Today_deals/headphones.png',
@@ -592,23 +587,42 @@ const gadgetProductData = [
         price: 559,
         detail: 'A perfect balance of high-fiedelity audio',
         reviews: 121,
-        tag: 'gadgets' 
     }
 ]
 
-gadgetsButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = '#003d29';
-    fashionButton.style.backgroundColor = 'transparent';
+// gadgetsButton.addEventListener('click', () => {
+//     gadgetsButton.style.backgroundColor = '#003d29';
+//     fashionButton.style.backgroundColor = 'transparent';
+//     toysButton.style.backgroundColor = 'transparent'; 
+//     educationButton.style.backgroundColor = 'transparent';
+//     beautyButton.style.backgroundColor = 'transparent';
+//     fitnessButton.style.backgroundColor = 'transparent';
+//     furnitureButton.style.backgroundColor = 'transparent';
+//     sneakersButton.style.backgroundColor = 'transparent';
 
-    gadgetsButton.style.color = 'white';
-    fashionButton.style.color = 'black';
+//     gadgetsButton.style.color = 'white';
+//     fashionButton.style.color = 'black';
+//     toysButton.style.color = 'black';
+//     educationButton.style.color = 'black';
+//     beautyButton.style.color = 'black';
+//     fitnessButton.style.color = 'black';
+//     furnitureButton.style.color = 'black';
+//     sneakersButton.style.color = 'black';
 
-    gadgetProductList.style.display = 'grid';
-    fashionProductList.style.display = 'none';
-});
+//     gadgetProductList.style.display = 'grid';
+//     fashionProductList.style.display = 'none';
+//     toysProductList.style.display = 'none';
+//     educationProductList.style.display = 'none';
+//     beautyProductList.style.display = 'none';
+//     fitnessButton.style.display = 'none';
+//     furnitureProductList.style.display = 'none';
+//     sneakersProductList.style.display = 'none';
+// });
 
 const newGadgetProductList = gadgetProductData.map(createSingleProductList);
 gadgetProductList.append(...newGadgetProductList);
+
+gadgetsButton.addEventListener('click', () => handleButtonClick(gadgetsButton));
 
 
 // Fashion Product List
@@ -620,7 +634,6 @@ const fashionProductData = [
         price: 239,
         detail: 'A perfext balance of high-fiedelity audio',
         reviews: 121,
-        tag: 'fashion'
     },
     {
         imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
@@ -628,7 +641,6 @@ const fashionProductData = [
         price: 159,
         detail: 'Color - Summit Fold Swirl - TNF Black',
         reviews: 121,
-        tag: 'fashion'
     },
     {
         imageUrl: './images/HomePage/Best_deals/hand_watch.png',
@@ -636,7 +648,6 @@ const fashionProductData = [
         price: 590,
         detail: 'Sleek wrist watch',
         reviews: 121,
-        taf: 'fashion'
     },
     {
         imageUrl: './images/HomePage/Best_deals/cabin.png',
@@ -644,232 +655,55 @@ const fashionProductData = [
         price: 59,
         detail: 'Polycarbonate, kk metal',
         reviews: 121,
-        tag: 'fashion'
     }
 ]
-
-fashionButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = '#003d29';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'white';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'grid';
-});
 
 const newFashionProductList = fashionProductData.map(createSingleProductList);
 fashionProductList.append(...newFashionProductList);
 
+fashionButton.addEventListener('click', () => handleButtonClick(fashionButton));
+
 
 // Toys Product List
-
-toysButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = '#003d29'; 
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'white';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'grid';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
-});
 
 const newToysProductList = todayDealsData.map(createSingleProductList);
 toysProductList.append(...newToysProductList);
 
+toysButton.addEventListener('click', () => handleButtonClick(toysButton));
+
 
 // Education Product List
 
-educationButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = '#003d29';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'white';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'grid';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
-});
-
 const newEducationProductList = todayDealsData.map(createSingleProductList);
 educationProductList.append(...newEducationProductList);
+educationButton.addEventListener('click', () => handleButtonClick(educationButton));
 
 
 // Beauty Product List
 
-beautyButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = '#003d29';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'white';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'grid';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
-});
-
 const newBeautyProductList = todayDealsData.map(createSingleProductList);
 beautyProductList.append(...newBeautyProductList);
+beautyButton.addEventListener('click', () => handleButtonClick(beautyButton));
 
 //Fitness Product List
 
-fitnessButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = '#003d29';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = 'transparent';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'white';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'black';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'grid';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'none';
-});
-
 const newFitnessProductList = todayDealsData.map(createSingleProductList);
 fitnessProductList.append(...newFitnessProductList);
+fitnessButton.addEventListener('click', () => handleButtonClick(fitnessButton));
 
 
 // Furniture Product List
 
-furnitureButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = '#003d29';
-    sneakersButton.style.backgroundColor = 'transparent';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'white';
-    sneakersButton.style.color = 'black';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'grid';
-    sneakersProductList.style.display = 'none';
-});
-
 const newFurnitureProductList = todayDealsData.map(createSingleProductList);
 furnitureProductList.append(...newFurnitureProductList);
+furnitureButton.addEventListener('click', () => handleButtonClick(furnitureButton));
 
 
 //Sneakers Product List
 
-sneakersButton.addEventListener('click', () => {
-    gadgetsButton.style.backgroundColor = 'transparent';
-    fashionButton.style.backgroundColor = 'transparent';
-    toysButton.style.backgroundColor = 'transparent';
-    educationButton.style.backgroundColor = 'transparent';
-    beautyButton.style.backgroundColor = 'transparent';
-    fitnessButton.style.backgroundColor = 'transparent';
-    furnitureButton.style.backgroundColor = 'transparent';
-    sneakersButton.style.backgroundColor = '#003d29';
-
-    gadgetsButton.style.color = 'black';
-    fashionButton.style.color = 'black';
-    toysButton.style.color = 'black';
-    educationButton.style.color = 'black';
-    beautyButton.style.color = 'black';
-    fitnessButton.style.color = 'black';
-    furnitureButton.style.color = 'black';
-    sneakersButton.style.color = 'white';
-
-    gadgetProductList.style.display = 'none';
-    fashionProductList.style.display = 'none';
-    toysProductList.style.display = 'none';
-    educationProductList.style.display = 'none';
-    beautyProductList.style.display = 'none';
-    fitnessButton.style.display = 'none';
-    furnitureProductList.style.display = 'none';
-    sneakersProductList.style.display = 'grid';
-});
-
 const newSneakersProductList = todayDealsData.map(createSingleProductList);
 sneakersProductList.append(...newSneakersProductList);
+sneakersButton.addEventListener('click', () => handleButtonClick(sneakersButton));
 
 
 // Most Selling Products
