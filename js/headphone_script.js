@@ -49,9 +49,9 @@ headphoneColorChoices.addEventListener('click', (event) => {
 const headphoneProductData = [
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone1.png',
-        title: 'Homepod mini',
+        title: 'BASS BLING ',
         price: 99,
-        detail: '5 colors available',
+        detail: 'For All Smartphones Bluetooth with mic',
         reviews: 121,
         headphone_type: 'wired',
         color: 'black'
@@ -68,90 +68,90 @@ const headphoneProductData = [
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone2.png',
-        title: 'Instax mini 9',
+        title: 'Aroma NB137 Nexon',
         price: 99,
-        detail: 'Selfie mode and selfie mirror, Macro mode',
+        detail: '16 Hours* Playtime Deep Bass Earbuds',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'mixed'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone3.png',
-        title: 'Base Camp Duffel M',
+        title: 'OnePlus Buds 3 TWS',
         price: 159,
-        detail: 'Color - Summit Fold Swirl - TNF Black',
+        detail: 'In Ear Earbuds with Sliding Volume Control',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone4.png',
-        title: 'Tote e Medium',
+        title: 'Ziddjeet A222 M19',
         price: 1259,
-        detail: 'Canvas, full grain leather',
+        detail: 'Superior Sound Quality Ture Wireless Clear',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone5.png',
-        title: 'Laptop sleeve MacBook',
+        title: 'realme Buds T110',
         price: 59,
-        detail: 'Organic Cotton, fairtrade certified',
+        detail: 'Fast Charging Bluetooth Headset',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone6.png',
-        title: 'Pendelton Water Bottle',
+        title: 'SONY WH-CH520',
         price: 59,
-        detail: 'Stainless steel,Food safe,Hand wash',
+        detail: 'DSEE Upscale, Dual Pairing Bluetooth Headset ',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone7.png',
-        title: 'Hand Watch',
+        title: 'SpinBot Ranger HX300',
         price: 299,
-        detail: 'Citizen 650M, W-65g',
+        detail: 'Low Latency & RGB Lights Bluetooth Gaming Headset',
         reviews: 121,
         headphone_type: 'wired',
         color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone8.png',
-        title: 'Tote e Medium',
+        title: 'Bose',
         price: 1259,
-        detail: 'Canvas, full grain leather',
+        detail: 'Spatial Audio Bluetooth Gaming Headset',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'white'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone9.png',
-        title: 'Laptop sleeve MacBook',
+        title: 'Sennheiser PC 8.2 ',
         price: 59,
-        detail: 'Organic Cotton, fairtrade certified',
+        detail: ' e-learning and music Wired Headset',
         reviews: 121,
         headphone_type: 'wired',
         color: 'pink'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone10.png',
-        title: 'Pendelton Water Bottle',
+        title: 'Bydye A224 M19',
         price: 59,
-        detail: 'Stainless steel,Food safe,Hand wash',
+        detail: 'Bluetooth Headset Bluetooth without Mic Headset',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'green'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone11.png',
-        title: 'Pendelton Water Bottle',
+        title: 'Boult K20',
         price: 59,
-        detail: 'Stainless steel,Food safe,Hand wash',
+        detail: 'Quad Mic ENC, 32H Battery Life, Low Latency Gaming',
         reviews: 121,
         headphone_type: 'wireless',
         color: 'mixed'

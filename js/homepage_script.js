@@ -308,21 +308,21 @@ const getDiscountData = [
         price: 29,
         description: 'Enjoy Discount all types of Books & Gadgets item',
         imageUrl: './images/HomePage/Get_discount/books.png', 
-        alterante: 'Furniture',
+        alterante: 'Gadgets',
         discountId: 'get_discount_single_item_2'
     },
     {
         price: 67,
-        description: 'Explore Our all types Dresses for Men',
+        description: 'Explore Our all types Dresses for Men in fashion',
         imageUrl: './images/HomePage/Get_discount/clothes.png', 
-        alterante: 'Furniture',
+        alterante: 'Clothing',
         discountId: 'get_discount_single_item_3'
     },
     {
         price: 59,
         description: 'Enjoy Discount all types of Educational accessories',
         imageUrl: './images/HomePage/Get_discount/education.png', 
-        alterante: 'Furniture',
+        alterante: 'Education',
         discountId: 'get_discount_single_item_4'
     },
 ]
@@ -547,31 +547,31 @@ const gadgetProductData = [
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
-        title: 'Base Camp Duffel M',
+        imageUrl: './images/HomePage/Today_best_deals/gadgets/smart_watch.png',
+        title: 'boAt Xtend Smart Watch',
         price: 159,
-        detail: 'Color - Summit Fold Swirl - TNF Black',
+        detail: 'Alexa built-in Voice Assistant ',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_deals/tot_medium.png',
-        title: 'Tote e Medium',
+        imageUrl: './images/HomePage/Today_best_deals/gadgets/camera.png',
+        title: 'Qubo Outdoor Security Camera',
         price: 1259,
-        detail: 'Canvas, full grain leather',
+        detail: 'Person Detection, Built-In Alarm System, Surveillance camera',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_deals/laptop_sleeve.png',
-        title: 'Laptop sleeve MacBook',
+        imageUrl: './images/HomePage/Today_best_deals/gadgets/door_lock.png',
+        title: 'Valencia- Hola Smart Door Lock',
         price: 59,
-        detail: 'Organic Cotton, fairtrade certified',
+        detail: 'Fingerprint, RFID, PIN Access & Manual Key Access',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_deals/Pendelton_water_bottle.png',
-        title: 'Pendelton Water Bottle',
+        imageUrl: './images/HomePage/Today_best_deals/gadgets/power_plate.png',
+        title: 'Portronics Power Plate ',
         price: 59,
-        detail: 'Stainless steel,Food safe,Hand wash',
+        detail: 'Smart Electric Universal Extension Board Multi Plug',
         reviews: 121,
     },
     {
@@ -629,31 +629,59 @@ gadgetsButton.addEventListener('click', () => handleButtonClick(gadgetsButton));
 
 const fashionProductData = [
     {
-        imageUrl: './images/HomePage/Best_deals/head_phones.png',
-        title: 'Gaming Headphones',
-        price: 239,
-        detail: 'A perfext balance of high-fiedelity audio',
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 99,
+        detail: '',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_deals/base_camp_duffel.png',
-        title: 'Base Camp Duffel M',
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
         price: 159,
-        detail: 'Color - Summit Fold Swirl - TNF Black',
+        detail: '',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Best_deals/hand_watch.png',
-        title: 'Tomford Watch',
-        price: 590,
-        detail: 'Sleek wrist watch',
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 1259,
+        detail: '',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Best_deals/cabin.png',
-        title: 'Cabin',
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
         price: 59,
-        detail: 'Polycarbonate, kk metal',
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fashion/',
+        title: '',
+        price: 559,
+        detail: '',
         reviews: 121,
     }
 ]
@@ -666,7 +694,66 @@ fashionButton.addEventListener('click', () => handleButtonClick(fashionButton));
 
 // Toys Product List
 
-const newToysProductList = todayDealsData.map(createSingleProductList);
+const toysProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/toys/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newToysProductList = toysProductData.map(createSingleProductList);
 toysProductList.append(...newToysProductList);
 
 toysButton.addEventListener('click', () => handleButtonClick(toysButton));
@@ -674,34 +761,329 @@ toysButton.addEventListener('click', () => handleButtonClick(toysButton));
 
 // Education Product List
 
-const newEducationProductList = todayDealsData.map(createSingleProductList);
+const educationProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/education/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newEducationProductList = educationProductData.map(createSingleProductList);
 educationProductList.append(...newEducationProductList);
 educationButton.addEventListener('click', () => handleButtonClick(educationButton));
 
 
 // Beauty Product List
 
-const newBeautyProductList = todayDealsData.map(createSingleProductList);
+const beautyProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/beauty/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newBeautyProductList = beautyProductData.map(createSingleProductList);
 beautyProductList.append(...newBeautyProductList);
 beautyButton.addEventListener('click', () => handleButtonClick(beautyButton));
 
 //Fitness Product List
 
-const newFitnessProductList = todayDealsData.map(createSingleProductList);
+const fitnessProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/fitness/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newFitnessProductList = fitnessProductData.map(createSingleProductList);
 fitnessProductList.append(...newFitnessProductList);
 fitnessButton.addEventListener('click', () => handleButtonClick(fitnessButton));
 
 
 // Furniture Product List
 
-const newFurnitureProductList = todayDealsData.map(createSingleProductList);
+const furnitureProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/furniture/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newFurnitureProductList = furnitureProductData.map(createSingleProductList);
 furnitureProductList.append(...newFurnitureProductList);
 furnitureButton.addEventListener('click', () => handleButtonClick(furnitureButton));
 
 
 //Sneakers Product List
 
-const newSneakersProductList = todayDealsData.map(createSingleProductList);
+const sneakersProductData = [
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 99,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 159,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 1259,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 59,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 299,
+        detail: '',
+        reviews: 121,
+    },
+    {
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        title: '',
+        price: 559,
+        detail: '',
+        reviews: 121,
+    }
+]
+
+const newSneakersProductList = sneakersProductData.map(createSingleProductList);
 sneakersProductList.append(...newSneakersProductList);
 sneakersButton.addEventListener('click', () => handleButtonClick(sneakersButton));
 
