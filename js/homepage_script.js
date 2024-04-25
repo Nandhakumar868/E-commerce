@@ -509,7 +509,7 @@ const sneakersProductList = document.getElementById('sneakers_button_product_lis
 
 
 function handleButtonClick(clickedButton){
-    const allButtons = [gadgetsButton, fashionButton, toysButton, educationButton, beautyButton, fitnessButton, furnitureButton, sneakersButton];
+    const allButtons = [gadgetsButton, toysButton, educationButton, beautyButton, fitnessButton, furnitureButton, sneakersButton];
     allButtons.forEach(button => {
         button.style.backgroundColor = 'transparent';
         button.style.color = 'black';
@@ -518,7 +518,7 @@ function handleButtonClick(clickedButton){
     clickedButton.style.backgroundColor = '#003d29';
     clickedButton.style.color = 'white';
 
-    const allProductLists = [gadgetProductList, fashionProductList, toysProductList, educationProductList, beautyProductList, fitnessProductList, furnitureProductList, sneakersProductList];
+    const allProductLists = [gadgetProductList, toysProductList, educationProductList, beautyProductList, fitnessProductList, furnitureProductList, sneakersProductList];
     allProductLists.forEach(list => {
         list.style.display = 'none';
     });
@@ -625,130 +625,63 @@ gadgetProductList.append(...newGadgetProductList);
 gadgetsButton.addEventListener('click', () => handleButtonClick(gadgetsButton));
 
 
-// Fashion Product List
-
-const fashionProductData = [
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 159,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 1259,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 299,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/fashion/',
-        title: '',
-        price: 559,
-        detail: '',
-        reviews: 121,
-    }
-]
-
-const newFashionProductList = fashionProductData.map(createSingleProductList);
-fashionProductList.append(...newFashionProductList);
-
-fashionButton.addEventListener('click', () => handleButtonClick(fashionButton));
-
-
 // Toys Product List
 
 const toysProductData = [
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/robot.png',
+        title: 'Galaxy Hi-Tech® Pioneer Bot',
         price: 99,
-        detail: '',
+        detail: 'All Direction Movement Dancing Robot',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/game_console.png',
+        title: 'VGRASSP Handheld Video Game Console',
         price: 99,
-        detail: '',
+        detail: 'Just switch on and play, connect with TV.',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/elephant.png',
+        title: 'Babique Elephant',
         price: 159,
-        detail: '',
+        detail: 'Super Soft',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/octopus.png',
+        title: 'Storio Toy Octopus Plushie',
         price: 1259,
-        detail: '',
+        detail: 'Plush Soft Fabric',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/piano.png',
+        title: 'VEBETO Kids Piano',
         price: 59,
-        detail: '',
+        detail: 'built-in 8 rhythms, 8 tones, 19 demos, 4 percussion/4 animal sounds',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/binoculars.png',
+        title: 'Binoculars',
         price: 59,
-        detail: '',
+        detail: 'Birdwatching Outdoor Observing Sports',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/cubes.png',
+        title: 'GRAPHENE Cubes',
         price: 299,
-        detail: '',
+        detail: 'high-quality, non-toxic materials',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/toys/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/toys/shape_sorting.png',
+        title: 'Shape Sorting Cube',
         price: 559,
-        detail: '',
+        detail: 'Toddler Learning and Educational Sorting',
         reviews: 121,
     }
 ]
@@ -1027,30 +960,30 @@ furnitureButton.addEventListener('click', () => handleButtonClick(furnitureButto
 const sneakersProductData = [
     {
         imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        title: 'ASIAN Mens Tarzan-11',
         price: 99,
-        detail: '',
+        detail: 'Non Slip & Shockproof',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        title: 'U.S. POLO ASSN.',
         price: 99,
-        detail: '',
+        detail: 'Polyurethane',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        title: 'Bacca Bucci Balancer',
         price: 159,
-        detail: '',
+        detail: 'Ethylene Vinyl Acetate',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        title: 'Centrino',
         price: 1259,
-        detail: '',
+        detail: 'Thermoplastic Elastomers',
         reviews: 121,
     },
     {

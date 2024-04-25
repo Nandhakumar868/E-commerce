@@ -103,24 +103,6 @@ const headphoneProductData = [
         color: 'black'
     },
     {
-        imageUrl: './images/HeadphonePage/ProductList/headphone6.png',
-        title: 'SONY WH-CH520',
-        price: 59,
-        detail: 'DSEE Upscale, Dual Pairing Bluetooth Headset ',
-        reviews: 121,
-        headphone_type: 'wireless',
-        color: 'black'
-    },
-    {
-        imageUrl: './images/HeadphonePage/ProductList/headphone7.png',
-        title: 'SpinBot Ranger HX300',
-        price: 299,
-        detail: 'Low Latency & RGB Lights Bluetooth Gaming Headset',
-        reviews: 121,
-        headphone_type: 'wired',
-        color: 'black'
-    },
-    {
         imageUrl: './images/HeadphonePage/ProductList/headphone8.png',
         title: 'Bose',
         price: 1259,
@@ -137,6 +119,24 @@ const headphoneProductData = [
         reviews: 121,
         headphone_type: 'wired',
         color: 'pink'
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone6.png',
+        title: 'SONY WH-CH520',
+        price: 59,
+        detail: 'DSEE Upscale, Dual Pairing Bluetooth Headset ',
+        reviews: 121,
+        headphone_type: 'wireless',
+        color: 'black'
+    },
+    {
+        imageUrl: './images/HeadphonePage/ProductList/headphone7.png',
+        title: 'SpinBot Ranger HX300',
+        price: 299,
+        detail: 'Low Latency & RGB Lights Bluetooth Gaming Headset',
+        reviews: 121,
+        headphone_type: 'wired',
+        color: 'black'
     },
     {
         imageUrl: './images/HeadphonePage/ProductList/headphone10.png',
