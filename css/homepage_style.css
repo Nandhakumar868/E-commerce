@@ -41,8 +41,8 @@
 #banner_image_1{
     overflow: hidden;
     position: absolute;
-    bottom: 20vh;
-    right: 40vw;
+    bottom: 20%;
+    right: 40%;
 }
 
 #banner_image_1 img,#banner_image_2 img,#banner_image_3 img,#banner_image_4 img{
@@ -53,22 +53,22 @@
 #banner_image_2{
     overflow: hidden;
     position: absolute;
-    bottom: 23vh;
-    right: 15vw;
+    bottom: 23%;
+    right: 15%;
 }
 
 #banner_image_3{
     overflow: hidden;
     position: absolute;
-    bottom: 33vh;
-    right: 30vw;
+    bottom: 36%;
+    right: 30%;
 }
 
 #banner_image_4{
     overflow: hidden;
     position: absolute;
-    bottom: 51vh;
-    right: 9vw;
+    bottom: 58%;
+    right: 9%;
 }
 
 .banner_title_1, .banner_title_2{
