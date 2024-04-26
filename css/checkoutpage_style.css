@@ -302,3 +302,46 @@
     color: gray;
     text-decoration: underline;
 }
+
+/* Payment Checkout */
+
+.payment_checkout{
+    position: fixed;
+    background-image: linear-gradient(rgba(66, 193, 228, 0.5),white);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    top: 20%;
+    right: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: white;
+        font-size: 2rem;
+        background-color: rgb(124, 212, 112);
+        border-radius: 50%;
+        padding: 0.5rem;
+        margin: 2rem;
+        border: 6px solid white;
+    }
+}
+
+.transaction_id{
+    color: gray;
+}
+
+.checkout_title{
+    margin: 2rem 0 0.5rem;
+}
+
+.checkout_button{
+    margin-top: 2rem;
+    background-color: rgb(236, 157, 11);
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}

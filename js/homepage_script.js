@@ -509,7 +509,7 @@ const sneakersProductList = document.getElementById('sneakers_button_product_lis
 
 
 function handleButtonClick(clickedButton){
-    const allButtons = [gadgetsButton, toysButton, educationButton, beautyButton, fitnessButton, furnitureButton, sneakersButton];
+    const allButtons = [gadgetsButton, toysButton, fitnessButton, furnitureButton, sneakersButton];
     allButtons.forEach(button => {
         button.style.backgroundColor = 'transparent';
         button.style.color = 'black';
@@ -518,7 +518,7 @@ function handleButtonClick(clickedButton){
     clickedButton.style.backgroundColor = '#003d29';
     clickedButton.style.color = 'white';
 
-    const allProductLists = [gadgetProductList, toysProductList, educationProductList, beautyProductList, fitnessProductList, furnitureProductList, sneakersProductList];
+    const allProductLists = [gadgetProductList, toysProductList, fitnessProductList, furnitureProductList, sneakersProductList];
     allProductLists.forEach(list => {
         list.style.display = 'none';
     });
@@ -555,23 +555,23 @@ const gadgetProductData = [
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/gadgets/camera.png',
-        title: 'Qubo Outdoor Security Camera',
+        title: 'Qubo Security Camera',
         price: 1259,
-        detail: 'Person Detection, Built-In Alarm System, Surveillance camera',
+        detail: 'Person Detection, Built-In Alarm System',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/gadgets/door_lock.png',
-        title: 'Valencia- Hola Smart Door Lock',
+        title: 'Smart Door Lock',
         price: 59,
-        detail: 'Fingerprint, RFID, PIN Access & Manual Key Access',
+        detail: 'Fingerprint, RFID, PIN & Manual Key Access',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/gadgets/power_plate.png',
         title: 'Portronics Power Plate ',
         price: 59,
-        detail: 'Smart Electric Universal Extension Board Multi Plug',
+        detail: 'Smart Electric Universal Extension Board',
         reviews: 121,
     },
     {
@@ -630,14 +630,14 @@ gadgetsButton.addEventListener('click', () => handleButtonClick(gadgetsButton));
 const toysProductData = [
     {
         imageUrl: './images/HomePage/Today_best_deals/toys/robot.png',
-        title: 'Galaxy Hi-Tech® Pioneer Bot',
+        title: 'Hi-Tech® Pioneer Bot',
         price: 99,
         detail: 'All Direction Movement Dancing Robot',
         reviews: 121,
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/toys/game_console.png',
-        title: 'VGRASSP Handheld Video Game Console',
+        title: 'Video Game Console',
         price: 99,
         detail: 'Just switch on and play, connect with TV.',
         reviews: 121,
@@ -651,7 +651,7 @@ const toysProductData = [
     },
     {
         imageUrl: './images/HomePage/Today_best_deals/toys/octopus.png',
-        title: 'Storio Toy Octopus Plushie',
+        title: 'Storio Toy Octopus',
         price: 1259,
         detail: 'Plush Soft Fabric',
         reviews: 121,
@@ -660,7 +660,7 @@ const toysProductData = [
         imageUrl: './images/HomePage/Today_best_deals/toys/piano.png',
         title: 'VEBETO Kids Piano',
         price: 59,
-        detail: 'built-in 8 rhythms, 8 tones, 19 demos, 4 percussion/4 animal sounds',
+        detail: 'built-in 8 rhythms, 4 animal sounds',
         reviews: 121,
     },
     {
@@ -692,194 +692,63 @@ toysProductList.append(...newToysProductList);
 toysButton.addEventListener('click', () => handleButtonClick(toysButton));
 
 
-// Education Product List
-
-const educationProductData = [
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 159,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 1259,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 299,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/education/',
-        title: '',
-        price: 559,
-        detail: '',
-        reviews: 121,
-    }
-]
-
-const newEducationProductList = educationProductData.map(createSingleProductList);
-educationProductList.append(...newEducationProductList);
-educationButton.addEventListener('click', () => handleButtonClick(educationButton));
-
-
-// Beauty Product List
-
-const beautyProductData = [
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 99,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 159,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 1259,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 59,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 299,
-        detail: '',
-        reviews: 121,
-    },
-    {
-        imageUrl: './images/HomePage/Today_best_deals/beauty/',
-        title: '',
-        price: 559,
-        detail: '',
-        reviews: 121,
-    }
-]
-
-const newBeautyProductList = beautyProductData.map(createSingleProductList);
-beautyProductList.append(...newBeautyProductList);
-beautyButton.addEventListener('click', () => handleButtonClick(beautyButton));
-
 //Fitness Product List
 
 const fitnessProductData = [
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/mini_cycle.png',
+        title: 'Mini Cycle Pedal',
         price: 99,
-        detail: '',
+        detail: 'Light Exercise of Legs & Arms',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/stepper_bench.png',
+        title: 'Fitness Stepper',
         price: 99,
-        detail: '',
+        detail: 'Aerobics Stepper with 3 Height Adjustments',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/hand_gripper.png',
+        title: 'Hand Gripper',
         price: 159,
-        detail: '',
+        detail: 'Finger Exerciser',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/tummy_trimmer.png',
+        title: 'Tummy Trimmer',
         price: 1259,
-        detail: '',
+        detail: 'Ultimate Ab Exerciser',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/kettlebells.png',
+        title: 'Kettlebells',
         price: 59,
-        detail: '',
+        detail: 'Heavy Lifting',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/roller.png',
+        title: 'Ab Roller',
         price: 59,
-        detail: '',
+        detail: 'Abs Workout Abdominal Exercise',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/weight_bench.png',
+        title: 'Weight Bench',
         price: 299,
-        detail: '',
+        detail: 'removable seated preacher curl attachment',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/fitness/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/fitness/treadmill.png',
+        title: 'Treadmill',
         price: 559,
-        detail: '',
+        detail: '15 Kilometers per Hour',
         reviews: 121,
     }
 ]
@@ -893,59 +762,59 @@ fitnessButton.addEventListener('click', () => handleButtonClick(fitnessButton));
 
 const furnitureProductData = [
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/plastic_storage.png',
+        title: 'Plastic Storage Cabinet',
         price: 99,
-        detail: '',
+        detail: 'Lockable,Lightweight',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/foldable_sofa.png',
+        title: 'Foldable Sofa/Cums Bed',
         price: 99,
-        detail: '',
+        detail: 'Foldable',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/wall_hanger.png',
+        title: 'Wall Shelf',
         price: 159,
-        detail: '',
+        detail: 'Easy to hang on wall',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/gaming_chair.png',
+        title: 'Sniper Gaming Chair',
         price: 1259,
-        detail: '',
+        detail: 'Adjustable Headrest & Lumbar Support',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/bean_bag.png',
+        title: 'Bean Bag',
         price: 59,
-        detail: '',
+        detail: 'Faux Leather',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/swing_chair.png',
+        title: 'Hanging Swing Chair',
         price: 59,
-        detail: '',
+        detail: 'Lightweight and easily portable',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/sofa_set.png',
+        title: 'L Shape Sofa Set',
         price: 299,
-        detail: '',
+        detail: 'Space Saving',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/furniture/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/furniture/bed.png',
+        title: 'Queen Size Bed',
         price: 559,
-        detail: '',
+        detail: 'Walnut Finish',
         reviews: 121,
     }
 ]
@@ -959,59 +828,59 @@ furnitureButton.addEventListener('click', () => handleButtonClick(furnitureButto
 
 const sneakersProductData = [
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/asian.png',
         title: 'ASIAN Mens Tarzan-11',
         price: 99,
         detail: 'Non Slip & Shockproof',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/polo.png',
         title: 'U.S. POLO ASSN.',
         price: 99,
         detail: 'Polyurethane',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/bacca_bucci.png',
         title: 'Bacca Bucci Balancer',
         price: 159,
         detail: 'Ethylene Vinyl Acetate',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/centrino.png',
         title: 'Centrino',
         price: 1259,
         detail: 'Thermoplastic Elastomers',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/puma.png',
+        title: 'Puma',
         price: 59,
-        detail: '',
+        detail: 'Rubber',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/symbol.png',
+        title: 'Symbol',
         price: 59,
-        detail: '',
+        detail: 'Leather',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/sparx.png',
+        title: 'Sparx',
         price: 299,
-        detail: '',
+        detail: 'TPR & EVA',
         reviews: 121,
     },
     {
-        imageUrl: './images/HomePage/Today_best_deals/sneakers/',
-        title: '',
+        imageUrl: './images/HomePage/Today_best_deals/sneakers/michael_angelo.png',
+        title: 'Michael Angelo',
         price: 559,
-        detail: '',
+        detail: 'Thermoplastic Elastomers',
         reviews: 121,
     }
 ]
